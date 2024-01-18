@@ -1,0 +1,223 @@
+p {
+	word-break: break-all;
+}
+
+/* 가장 먼저 위에 보이는 사진 */
+.intro-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro-section p {
+	height: 400px;
+	position: absolute;
+	display: flex;
+	top: 350px;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	color: rgb(250, 251, 253);
+	width: 200px;
+	height: 200px;
+	word-break: break-all;
+}
+
+/* 서브 메뉴 네비바*/
+.subMenus-section {
+	width: 100%;
+}
+.subMenus-section ul {
+	border-bottom: 2px solid rgb(237, 237, 238);
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 80px;
+}
+
+.subMenus-section ul li {
+	display: flex;
+}
+
+.subMenus-section ul li a {
+	font-size: 20px;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: rgb(57, 57, 58);
+}
+
+.subMenus-section ul li a:hover {
+	font-size: 20px;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: rgb(15, 15, 95);
+}
+
+/* 캠페인 리뷰 */
+.review-section {
+	height: 740px;
+	border: 1px solid transparent;
+	/* background-color: rgb(19, 165, 190); */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.review-section .r-s-intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	margin: 80px 0;
+}
+
+.review-section .r-s-intro {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.5s ease-out;
+}
+
+.review-section .r-s-intro > ul {
+	position: relative;
+	width: 240px;
+	height: 220px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.review-section .r-s-intro p {
+	word-break: keep-all;
+	width: 350px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 50px;
+	color: rgb(34, 35, 35);
+	font-weight: bold;
+	font-family: 'Nanum Pen Script', cursive;
+	text-shadow: 1.4px 1.4px 1.6px white;
+	margin: 40px;
+}
+
+.swiper1 {
+	width: 80vh;
+	height: 200px;
+	overflow: hidden;
+}
+
+.swiper1 .swiper-slide {
+	line-height: 20px;
+	word-break: keep-all;
+	font-size: 14px;
+	background: #fff;
+}
+
+.swiper1 .swiper-slide img {
+	display: block;
+	width: 200px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.swiper1 .swiper-slide p {
+	display: block;
+	width: 178px;
+	padding: 0 6px 6px 6px;
+	text-align: start;
+	margin-bottom: 10px;
+}
+
+.swiper1 .swiper-pagination {
+	position: relative;
+}
+
+/*현재 진행 중인 캠페인*/
+.showCampagin-section {
+	opacity: 0;
+	transform: translateY(-10px);
+}
+
+.visible {
+	opacity: 1;
+	transform: translateY(30px);
+	transition: all 0.8s ease-out;
+}
+
+.showCampagin-section > p {
+	word-break: keep-all;
+	line-height: 50px;
+	margin: 50px 0 14px 0;
+	font-size: 40px;
+	text-align: center;
+	padding: 20px;
+	font-family: 'Black Han Sans', sans-serif;
+	color: rgb(34, 35, 35);
+}
+.swiper2 {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.swiper2 .swiper-slide {
+	background-position: center;
+	background-size: cover;
+}
+
+.swiper2 .swiper-slide img {
+	border-radius: 20%;
+	display: block;
+	width: 100%;
+}
+
+.swiper2 .swiper-pagination {
+	position: absolute;
+	bottom: -80px;
+}
+
+/*참여 유도*/
+.join-us-section {
+	margin-top: 200px;
+	height: 500px;
+	background-color: rgb(22, 22, 22);
+	color: white;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-image: linear-gradient(-45deg, rgb(114, 114, 117), rgb(0, 0, 0));
+}
+
+.join-us-section ul {
+	word-break: keep-all;
+	line-height: 65px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70vh;
+	height: 300px;
+}
+
+.join-us-section img {
+	/* border: 1px solid transparent;
+    border-radius: 50%; */
+	box-shadow: 0px 0px 10px #000000;
+	height: 40vh;
+	width: 30vw;
+	filter: brightness(90%);
+}
+
+button {
+	margin-right: 10px;
+	background-color: rgb(64, 64, 64);
+	color: white;
+	outline: 1px solid white;
+	border-radius: 6px;
+}
+
+button:hover {
+	background-color: rgb(35, 34, 34);
+}
