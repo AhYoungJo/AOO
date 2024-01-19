@@ -1,5 +1,7 @@
 p {
     word-break: break-all;
+    text-align: center;
+    line-height: 70px;
 }
 
 /* 가장 먼저 위에 보이는 사진 */
