@@ -1,0 +1,187 @@
+favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!--화면 넓이: 디바이스 넓이 / initial scale(기본 사이즈)를 1로 지정-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+        <!--브라우저와 관계없이 CSS가 일괄적으로 적용되게끔 CSS기본값 초기화-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+
+
+        <link rel="stylesheet" href="../../css/introduction/introduction01.css" />
+        <!-- <link rel="stylesheet" href="./css/introductionPage.css" /> -->
+        <script defer src="../../js/introduction/introduction01.js"></script>
+        <!-- <script defer src="./js/introductionPage.js"></script> -->
+
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuvD-9eN2rgrLNe1vINsd0f4LPzFp74-k&callback=console.debug&libraries=maps,marker&v=beta"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!--아이콘 cdn-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <nav class="navbar n-1">
+                    <div class="homepage-logo">
+                        <a href="#"><img src="/favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" style="width: 46px;"></a>
+                    </div>
+                    <ul class="navbar-menu">
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href=""><i class="bi bi-twitter"></i></li>
+                        <li><a href=""><i class="bi bi-facebook"></i></li>
+                        <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </nav>
+                <nav class="navbar n-2">
+                        <!--jQeury: $(".navbar-main-menu a").click(function()) // main-menu ul li (메인 메뉴 클릭하면 하단 메뉴 뜨게)-->
+                        <ul class="navbar-main-menu">
+                            <li class="main_menu__name introMenu" >
+                                <a href="/html/introduction/introduciton01.html">소개</a>
+                                <div class="main-menu introSubMenu">
+                                    <ul class="inner">
+                                        <li ><a href="/html/introduction/introduciton01.html">인사말</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="main_menu__name activityMenu">
+                                <a href="/html/campaign/campaign01.html">활동</a>
+                                <div class="main-menu activitySubMenu">
+                                    <ul class="inner">
+                                        <li><a href="/html/campaign/campaign02-01.html">진행중인 캠페인</a></li>
+                                        <li><a href="/html/campaign/campaign02-02.html">완료된 캠페인</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="main_menu__name businessMenu">
+                                <a href="/html/business/business01.html">사업</a>
+                                <div class="main-menu businessSubMenu">
+                                    <ul class="inner">
+                                        <li><a href="/html/business/business01.html">대기</a></li>
+                                        <li><a href="/html/business/business02.html">해양</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="main_menu__name communicationMenu">
+                                <a href="/html/communicaton/communication01.html">커뮤니케이션</a>
+                                <div class="main-menu communicationSubMenu">
+                                    <ul class="inner">
+                                        <li><a href="/html/communicaton/communication01.html">자주 묻는 질문</a></li>
+                                        <li><a href="/html/communicaton/communication02.html">공지사항</a></li>
+                                        <li><a href="/html/communicaton/communication03.html">최근 소식</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="main_menu__name donationMenu">
+                                <a href="/html/donation/donation01.html">후원하기</a>
+                                <div class="main-menu donationSubMenu">
+                                    <ul class="inner">
+                                        <li><a href="/html/donation/donation01.html">후원</a></li>
+                                        <li><a href="/html/donation/donation02.html">후원 정보 조회</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </nav>
+            </header>
+
+
+            <section>
+                <h2 class="center-head">
+                    AOO 소개
+                </h2>
+                
+                <div class="contents">
+                    <div class = content1 >
+                        <img src ="https://wadr.org/wp-content/uploads/2024/01/esg.jpg">
+        
+                        <div class="content1-text">
+                            <div class="shadow-text">
+                                <div><span>A</span>tmospheric</div>
+                                <div>and</div>
+                                <div><span>O</span>ceanographic</div>
+                                <div><span>O</span>rganization</div>
+                            </div>
+                            <div class ="content-text">
+                                <div>저희 <span>AOO</span>는 지구를 지키고 지속 가능한 미래를 위해 끊임없이 노력하는 단체입니다.</div>
+                                <div>저희의 목표는 환경 보전 및 지속 가능한 발전을 촉진하여 모든 이들이 건강하고 안전한 환경에서 살 수 있도록 하는 것입니다.</div>
+                                <div>저희는 지구의 생태계를 보호하고 오염을 줄이기 위한 다양한 프로젝트를 진행하고 있으며 교육 및 홍보를 통해 개인과 기업이 환경에 대한 책임을 인식하고 행동할 수 있도록 돕고 있습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <h2 class="center-head">
+                    오시는 길
+                </h2>
+        
+                <div class="contents">
+        
+                    <div class = content2 >
+                        <div class="google-map">
+                            <gmp-map center="37.547607421875,126.94568634033203" zoom="20" map-id="DEMO_MAP_ID">
+                                <gmp-advanced-marker position="37.547607421875,126.94568634033203" title="My location">
+                                </gmp-advanced-marker>
+                            </gmp-map>
+                        </div>
+        
+                        <div class="content-text">
+                            <div>- 주소: 서울특별시 마포구 숭문4길 6</div>
+                            <div>- 대흥역에서 도보로 8분 거리</div>
+                            <div>- 주차공간이 많이 부족하오니 되도록 대중교통을 이용해 주시기 바랍니다.</div>
+                            <div>- <a href="http://parking.seoul.go.kr/">주차정보안내시스템</a>에서 주변 공영주차장을 확인하실 수 있습니다.</div>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+
+            
+            <footer>
+                <div class="info">
+                    <ul class="inner">
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">오시는 길</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">사이트맵</a></li>
+                        <li><a href="">후원문의 02.123.4567</a></li>
+                    </ul>
+                </div>
+                <div class="address">
+                    <ul class="inner">
+                        <li>사단법인 코딩온위원회</li>
+                        <li>대표자:코딩온</li>
+                        <li>고유번호: 123-45-67890</li>
+                        <li>[00001]서울시 코딩구 코딩로 100(코딩동)</li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <ul class="inner">
+                        COPYRIGHT@THE KOREAN COMMITTEE FOR CODINGON ENVIRONEMNT SUPPORTER.ALL RIGHT RESERVED 
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
