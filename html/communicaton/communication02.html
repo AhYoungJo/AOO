@@ -27,9 +27,11 @@
 
         <link rel="stylesheet" href="../../css/common.css" />
         <link rel="stylesheet" href="../../css/communicaton/communication02.css" />
+        <link rel="stylesheet" href="../../css/donationCard.css" />
 
         <script defer src="../../js/communicaton/communication02.js"></script>
         <script defer src="../../js/common.js"></script>
+        <script defer src="../../js/donationCard.js"></script>
 
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -103,6 +105,14 @@
                             </li>
                         </ul>
                 </nav>
+                <!--웹을 켜면 헤더 바로 밑에 뜨는 후원 배너-->
+                 <div class="donationCard">
+                    <ul class="donationCard-inner">
+                        <li>AOO와 함께하세요💛</li>
+                        <li class="goToDonation" onclick="goToDonation()">후원 바로가기</li>
+                        <button class="cancelButt">X</button>                       
+                    </ul>
+                </div>
             </header>
     
             <section>

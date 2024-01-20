@@ -105,23 +105,14 @@ function scrollToTop() {
     });
 }
 
-$scrollToTopButton.click(function () {
-    $("html, body").animate(
-        {
-            scrollTop: 0,
-        },
-        "slow"
-    );
-});
+// $(document).ready(function () {
+//     $(".goToDonation").click(function () {
+//         location.href = "http://127.0.0.1:5502/html/donation/donation01.html";
+//     });
+// });
 
-$(document).ready(function () {
-    $(".goToDonation").click(function () {
-        location.href = "https://google.com";
-    });
-});
-
-$(document).ready(function () {
-    $(".cancelButt").click(function () {
-        $(".donationCard").remove();
-    });
-});
+// $(document).ready(function () {
+//     $(".cancelButt").click(function () {
+//         $(".donationCard").fadeOut();
+//     });
+// });
