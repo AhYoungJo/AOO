@@ -86,14 +86,21 @@ p {
 	height:500px;
 	border:yellow solid 3px;
 	display: flex;
+	align-items: center;
 }
 
 .problem .problem-text{
 	width:50%;
+	text-align: center;
 }
 
 .problem .problem-image{
 	width:50%;
+
+}
+.problem img{
+	width:90%;
+	height:90%;
 }
 
 
@@ -112,9 +119,10 @@ p {
 	
 }
 
-.project-contents div{
+.project-contents>div{
 	border:blue solid 3px;
 	height:300px;
 	width:33%;
+	text-align: center;
 	
 }
