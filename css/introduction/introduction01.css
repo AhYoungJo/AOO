@@ -158,9 +158,6 @@ article h2 {
     font-size: 28px; /* 글씨 크기 키우기 */
 }
 
-
-
-
 .join-us-section {
     margin-top: 200px;
     height: 500px;
@@ -193,66 +190,58 @@ article h2 {
     filter: brightness(90%);
 }
 
-
-
-section{
-    margin-top:170px;
+section {
+    margin-top: 170px;
     position: relative;
-    width:100%;
+    width: 100%;
 }
-.center-head{
+.center-head {
     text-align: center;
-    color: black; 
+    color: black;
     font-size: 30px;
 }
 
-.contents{
+.contents {
     position: relative;
     /* border: 1px solid #ccc; */
     /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)); */
-
 }
 
-.content1{
+.content1 {
     display: flex;
     padding: 50px 50px;
-
 }
-.content1>img{
-    width:60%;
+.content1 > img {
+    width: 60%;
     border-radius: 10px;
-    margin-right:20px;
+    margin-right: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
 }
 
-.content1-text{
-    margin-left:40px;
+.content1-text {
+    margin-left: 40px;
 }
 
-.shadow-text span{
-    font-size:70px;
-    color: #AAA;
-    
+.shadow-text span {
+    font-size: 70px;
+    color: #aaa;
 }
 
-.content-text span{
-    color: #AAA;
-
+.content-text span {
+    color: #aaa;
 }
 
-
-.shadow-text{
+.shadow-text {
     justify-self: center;
     align-items: center;
 }
 .shadow-text div {
-    font-size:50px;
+    font-size: 50px;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* 그림자 효과 설정 */
 
     opacity: 0;
     animation: fadeIn 1.5s forwards;
 }
-
 
 .shadow-text div:nth-child(1) {
     animation-delay: 0s;
@@ -270,28 +259,23 @@ section{
     animation-delay: 1.5s;
 }
 
-
-.content1-text .content-text{
-    
+.content1-text .content-text {
     opacity: 0;
     animation: fadeIn 1.5s forwards;
-    animation-delay:2.0s;
-    margin-top:60px;
-
+    animation-delay: 2s;
+    margin-top: 60px;
 }
 
-.content-text div{
-    margin-bottom:20px;
+.content-text div {
+    margin-bottom: 20px;
     line-height: 1.5;
 }
 
-.content-text{
-    color: black; 
-    font-size:20px;
+.content-text {
+    color: black;
+    font-size: 20px;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* 그림자 효과 설정 */
-
 }
-
 
 @keyframes fadeIn {
     from {
@@ -302,30 +286,19 @@ section{
     }
 }
 
-
-.content2{
+.content2 {
     display: flex;
     padding: 50px 50px;
-
 }
-.google-map{
+.google-map {
     position: relative;
     height: 400px;
-    width:50%;
+    width: 50%;
     margin-right: 30px;
 }
-.content2 .content-text{
+.content2 .content-text {
     margin-top: 80px;
 }
-
-
-
-
-
-
-
-
-
 
 footer {
     position: absolute;

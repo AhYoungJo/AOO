@@ -55,6 +55,7 @@ p {
 
 /* 캠페인 리뷰 */
 .review-section {
+    /* position: relative; */
     max-width: 90vw;
     height: 740px;
     border: 1px solid transparent;
