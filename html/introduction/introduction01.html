@@ -1,4 +1,4 @@
-favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -23,10 +23,13 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
 
 
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link rel="stylesheet" href="../../css/donationCard.css" />
         <link rel="stylesheet" href="../../css/introduction/introduction01.css" />
         <!-- <link rel="stylesheet" href="./css/introductionPage.css" /> -->
-        <script defer src="/js/common.js"></script>
-        <script defer src="/js/introduction/introduction01.js"></script>
+        <script defer src="../../js/common.js"></script>
+        <script defer src="../../js/donationCard.js"></script>
+        <script defer src="../../js/introduction/introduction01.js"></script>
 
         <!-- <script defer src="./js/introductionPage.js"></script> -->
 
@@ -42,10 +45,10 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
         <div class="wrap">
             <header>
                 <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
-
+                
                 <nav class="navbar n-1">
                     <div class="homepage-logo">
-                        <a href="#"><img src="/favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" style="width: 46px;"></a>
+                        <a href="../main.html"><img src="../../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" style="width: 46px;"></a>
                     </div>
                     <ul class="navbar-menu">
                         <li><a href="">로그인</a></li>
@@ -105,6 +108,13 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
                         </li>
                     </ul>
                 </nav>
+                <div class="donationCard">
+                    <ul class="donationCard-inner">
+                        <li>AOO와 함께하세요💛</li>
+                        <li class="goToDonation" onclick="goToDonation()">후원 바로가기</li>
+                        <button class="cancelButt">X</button>                       
+                    </ul>
+                </div>
             </header>
 
 

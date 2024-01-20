@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".introMenu").mouseover(function () {
+    $(".introMenu a").mouseover(function () {
         $(".introSubMenu ul li").css({
             visibility: "visible",
             opacity: "1",
@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 });
 $(document).ready(function () {
-    $(".activityMenu").mouseover(function () {
+    $(".activityMenu a").mouseover(function () {
         $(".activitySubMenu ul li").css({
             visibility: "visible",
             opacity: "1",
@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
 });
 $(document).ready(function () {
-    $(".businessMenu").mouseover(function () {
+    $(".businessMenu a").mouseover(function () {
         $(".businessSubMenu ul li").css({
             visibility: "visible",
             opacity: "1",
@@ -30,7 +30,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $(".communicationMenu").mouseover(function () {
+    $(".communicationMenu a").mouseover(function () {
         $(".communicationSubMenu ul li").css({
             visibility: "visible",
             opacity: "1",
@@ -41,12 +41,12 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $(".donationMenu").mouseover(function () {
+    $(".donationMenu a").mouseover(function () {
         $(".donationSubMenu ul li").css({
             visibility: "visible",
             opacity: "1",
             transition: "1s",
-            top: "4vh",
+            top: "3vh",
         });
     });
 });
@@ -56,7 +56,7 @@ window.addEventListener("mouseout", function () {
         visibility: "hidden",
         opacity: "0",
         transition: "0.5s",
-        top: "0vh",
+        top: "0px",
     });
 });
 

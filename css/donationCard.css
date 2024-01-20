@@ -3,12 +3,12 @@
     line-height: 17px;
     text-align: center;
     background-color: rgb(53, 53, 53);
-    border: 1px solid rgb(195, 194, 194);
+    border: 2px solid rgb(102, 101, 101);
     color: #d4d4d4;
 
     position: fixed;
-    top: 30%;
-    right: 50px;
+    top: 30vh;
+    right: 5vw;
     width: 100px;
     height: 100px;
     border-radius: 10px;

@@ -1,125 +1,4 @@
-body {
-    /* font-size: 16px; */
-    background-color: rgb(245, 246, 246);
-    font-family: "Noto Sans KR", sans-serif;
-    height: 100%;
-}
-
-.wrap {
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 100px;
-}
-li a {
-    text-decoration: none;
-    color: rgb(30, 30, 30);
-    font-weight: bold;
-    font-size: 12px;
-}
-
-li a:hover {
-    color: rgb(91, 87, 86);
-    font-weight: bold;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-.navbar {
-    height: 50px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-}
-
-.navbar a {
-    font-size: 13px;
-}
-
-.navbar-menu {
-    display: flex;
-}
-
-.navbar-menu > li {
-    padding-left: 10px;
-}
-
-.n-2 {
-    background-color: rgb(255, 255, 255);
-    border-top: 1px solid rgb(237, 237, 238);
-    border-bottom: 1px solid rgb(237, 237, 238);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-}
-
-.navbar-main-menu {
-    display: flex;
-    width: 100vw;
-    height: 30px;
-    align-items: center;
-    position: relative;
-}
-
-.main_menu__name {
-    margin: 0 auto;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main_menu__name > a {
-    font-size: 20px;
-    color: rgb(57, 57, 58);
-    font-weight: bold;
-}
-
-.main-menu ul li {
-    visibility: hidden;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.7);
-    align-items: center;
-    position: relative;
-    top: -2vh;
-    width: 19vw;
-    text-align: center;
-    line-height: 25px;
-    word-break: keep-all;
-}
-
-.main-menu ul li:nth-child(2),
-.main-menu ul li:nth-child(3) {
-    border-top: 1px solid rgb(197, 197, 199);
-}
-
-.main-menu ul li:last-child {
-    border-radius: 0 0px 10px 10px;
-}
-
-.main-menu a {
-    margin: 0 auto;
-    color: rgb(29, 29, 29);
-    font-weight: normal;
-    font-size: 16px;
-    padding: 12px 0;
-}
-
-.main-menu a:hover {
-    color: rgb(78, 79, 79);
-}
-
 /* 가장 먼저 위에 보이는 사진 */
-
 .intro-section {
     position: relative;
     display: flex;
@@ -185,7 +64,8 @@ article h2 {
 .center-head {
     text-align: center;
     color: black;
-    font-size: 30px;
+    font-size: 34px;
+    margin-top: 50px;
 }
 
 .contents {
@@ -219,10 +99,11 @@ article h2 {
 
 .content1-text {
     margin-left: 40px;
+    line-height: 70px;
 }
 
 .shadow-text span {
-    font-size: 70px;
+    font-size: 90px;
     background: linear-gradient(45deg, #029aff, #42e470);
     color: transparent;
     background-clip: text;
