@@ -60,20 +60,24 @@ window.addEventListener('mouseout', function () {
     });
 });
 
-var scrollToTopButton = document.getElementById('scrollToTopBtn');
 
-// 스크롤이 바디 70프로 이상 내려갔을때 버튼 나타나게 구현
-// offsetHeight, clientHeight 둘중 하나 선택
-// clientHeight은 스크롤영역 미포함 (페이지 들어때 뜨는 스크린 기준)
-// offsetHeight은 스크롤영역 포함 (전체 화면 기준)
+$(document).ready(function() {
+    var $scrollToTopButton = $('#scrollToTopBtn');
+    var scrollThreshold = 0.4; // 40%
 
-window.onscroll = function () {
-    if (document.body.scrollTop > 0.6 * document.body.offsetHeight) {
-        scrollToTopButton.style.display = 'block';
-    } else {
-        scrollToTopButton.style.display = 'none';
-    }
-};
+    // 스크롤이 전체 페이지의 40% 이상 내려갔을 때 버튼 나타나게 구현
+    $(window).scroll(function() {
+        var windowHeight = $(window).height();
+        var documentHeight = $(document).height();
+        var scrollPosition = $(this).scrollTop();
+
+        if (scrollPosition > (scrollThreshold * (documentHeight - windowHeight))) {
+            $scrollToTopButton.css('display', 'inline-block');
+        } else {
+            $scrollToTopButton.css('display', 'none');
+        }
+    });   
+});
 
 //버튼 클릭시 스크롤이 탑으로 부드럽게 올라가는 js
 function scrollToTop() {

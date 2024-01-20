@@ -26,6 +26,8 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
         <link rel="stylesheet" href="../../css/introduction/introduction01.css" />
         <!-- <link rel="stylesheet" href="./css/introductionPage.css" /> -->
         <script defer src="/js/common.js"></script>
+        <script defer src="/js/introduction/introduction01.js"></script>
+
         <!-- <script defer src="./js/introductionPage.js"></script> -->
 
         <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuvD-9eN2rgrLNe1vINsd0f4LPzFp74-k&callback=console.debug&libraries=maps,marker&v=beta"></script>
@@ -34,11 +36,13 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
 
         <!--아이콘 cdn-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        
+    
     </head>
     <body>
         <div class="wrap">
             <header>
+                <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
+
                 <nav class="navbar n-1">
                     <div class="homepage-logo">
                         <a href="#"><img src="/favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" style="width: 46px;"></a>
