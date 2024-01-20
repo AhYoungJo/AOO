@@ -358,3 +358,18 @@ footer .copyright .inner {
 }
 
 /*미디어 쿼리로 메뉴 가로 길이 조절하기*/
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    /* transition: 0.7s ease-in-out; */
+}
