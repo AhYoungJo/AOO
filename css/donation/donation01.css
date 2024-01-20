@@ -101,7 +101,7 @@ section {
     display: flex;
     line-height: 45px;
 }
-#label_ul {
+.label_ul {
     display: flex;
     padding-bottom: 15px;
     line-height: 45px;
