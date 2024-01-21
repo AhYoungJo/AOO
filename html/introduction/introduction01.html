@@ -1,4 +1,4 @@
-favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -23,10 +23,13 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
 
 
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link rel="stylesheet" href="../../css/donationCard.css" />
         <link rel="stylesheet" href="../../css/introduction/introduction01.css" />
         <!-- <link rel="stylesheet" href="./css/introductionPage.css" /> -->
-        <script defer src="/js/common.js"></script>
-        <script defer src="/js/introduction/introduction01.js"></script>
+        <script defer src="../../js/common.js"></script>
+        <script defer src="../../js/donationCard.js"></script>
+        <script defer src="../../js/introduction/introduction01.js"></script>
 
         <!-- <script defer src="./js/introductionPage.js"></script> -->
 
@@ -42,10 +45,10 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
         <div class="wrap">
             <header>
                 <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
-
+                
                 <nav class="navbar n-1">
                     <div class="homepage-logo">
-                        <a href="#"><img src="/favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" style="width: 46px;"></a>
+                        <a href="../main.html"><img src="../../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" style="width: 46px;"></a>
                     </div>
                     <ul class="navbar-menu">
                         <li><a href="">로그인</a></li>
@@ -57,62 +60,69 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
                 </nav>
                 <nav class="navbar n-2">
                         <!--jQeury: $(".navbar-main-menu a").click(function()) // main-menu ul li (메인 메뉴 클릭하면 하단 메뉴 뜨게)-->
-                        <ul class="navbar-main-menu">
-                            <li class="main_menu__name introMenu" >
-                                <a href="/html/introduction/introduction01.html">소개</a>
-                                <div class="main-menu introSubMenu">
-                                    <ul class="inner">
-                                        <li ><a href="/html/introduction/introduction01.html">인사말</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="main_menu__name activityMenu">
-                                <a href="/html/campaign/campaign01.html">활동</a>
-                                <div class="main-menu activitySubMenu">
-                                    <ul class="inner">
-                                        <li><a href="/html/campaign/campaign02-01.html">진행중인 캠페인</a></li>
-                                        <li><a href="/html/campaign/campaign02-02.html">완료된 캠페인</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="main_menu__name businessMenu">
-                                <a href="/html/business/business01.html">사업</a>
-                                <div class="main-menu businessSubMenu">
-                                    <ul class="inner">
-                                        <li><a href="/html/business/business01.html">대기</a></li>
-                                        <li><a href="/html/business/business02.html">해양</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="main_menu__name communicationMenu">
-                                <a href="/html/communicaton/communication01.html">커뮤니케이션</a>
-                                <div class="main-menu communicationSubMenu">
-                                    <ul class="inner">
-                                        <li><a href="/html/communicaton/communication01.html">자주 묻는 질문</a></li>
-                                        <li><a href="/html/communicaton/communication02.html">공지사항</a></li>
-                                        <li><a href="/html/communicaton/communication03.html">최근 소식</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="main_menu__name donationMenu">
-                                <a href="/html/donation/donation01.html">후원하기</a>
-                                <div class="main-menu donationSubMenu">
-                                    <ul class="inner">
-                                        <li><a href="/html/donation/donation01.html">후원</a></li>
-                                        <li><a href="/html/donation/donation02.html">후원 정보 조회</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
+                    <ul class="navbar-main-menu">
+                        <li class="main_menu__name introMenu" >
+                            <a href="/html/introduction/introduction01.html">소개</a>
+                            <div class="main-menu introSubMenu">
+                                <ul class="inner">
+                                    <li ><a href="/html/introduction/introduction01.html">인사말</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="main_menu__name activityMenu">
+                            <a href="/html/campaign/campaign01.html">활동</a>
+                            <div class="main-menu activitySubMenu">
+                                <ul class="inner">
+                                    <li><a href="/html/campaign/campaign02-01.html">진행중인 캠페인</a></li>
+                                    <li><a href="/html/campaign/campaign02-02.html">완료된 캠페인</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="main_menu__name businessMenu">
+                            <a href="/html/business/business01.html">사업</a>
+                            <div class="main-menu businessSubMenu">
+                                <ul class="inner">
+                                    <li><a href="/html/business/business01.html">대기</a></li>
+                                    <li><a href="/html/business/business02.html">해양</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="main_menu__name communicationMenu">
+                            <a href="/html/communicaton/communication01.html">커뮤니케이션</a>
+                            <div class="main-menu communicationSubMenu">
+                                <ul class="inner">
+                                    <li><a href="/html/communicaton/communication01.html">자주 묻는 질문</a></li>
+                                    <li><a href="/html/communicaton/communication02.html">공지사항</a></li>
+                                    <li><a href="/html/communicaton/communication03.html">최근 소식</a></li>
+                                </ul>
+                            </div>
+                         </li>
+                        <li class="main_menu__name donationMenu">
+                            <a href="/html/donation/donation01.html">후원하기</a>
+                            <div class="main-menu donationSubMenu">
+                                <ul class="inner">
+                                    <li><a href="/html/donation/donation01.html">후원</a></li>
+                                    <li><a href="/html/donation/donation02.html">후원 정보 조회</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </nav>
+                <div class="donationCard">
+                    <ul class="donationCard-inner">
+                        <li>AOO와 함께하세요💛</li>
+                        <li class="goToDonation" onclick="goToDonation()">후원 바로가기</li>
+                        <button class="cancelButt">X</button>                       
+                    </ul>
+                </div>
             </header>
 
 
             <section>
-                <h2 class="center-head">
-                    AOO 소개
-                </h2>
+                <div class="intro-section">
+                    <img src="../../img/intro-top.jpg" alt="" class="environ-1" style="width: 100%; height: 800px; filter: brightness(60%)">
+                    <p>소개</p>
+                </div>
                 
                 <div class="contents">
                     <div class = content1 >
@@ -132,7 +142,6 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
                             </div>
                         </div>
                     </div>
-        
                 </div>
         
                 <h2 class="center-head">

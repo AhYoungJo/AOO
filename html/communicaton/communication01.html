@@ -33,9 +33,11 @@
 
         <link rel="stylesheet" href="../../css/common.css" />
         <link rel="stylesheet" href="../../css/communicaton/communication01.css" />
+        <link rel="stylesheet" href="../../css/donationCard.css" />
 
         <script defer src="../../js/common.js"></script>
         <script defer src="../../js/communicaton/communication01.js"></script>
+        <script defer src="../../js/donationCard.js"></script>
 
         <script
             src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -49,6 +51,7 @@
     <body>
         <div class="wrap">
             <header>
+                <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
                 <nav class="navbar n-1">
                     <div class="homepage-logo">
                         <a href="../main.html"
@@ -75,10 +78,10 @@
                 <nav class="navbar n-2">
                     <ul class="navbar-main-menu">
                         <li class="main_menu__name introMenu">
-                            <a href="">소개</a>
+                            <a href="../introduction/introduction01.html">소개</a>
                             <div class="main-menu introSubMenu">
                                 <ul class="inner">
-                                    <li><a href="">인사말</a></li>
+                                    <li><a href="../introduction/introduction01.html">인사말</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -111,22 +114,30 @@
                             </div>
                         </li>
                         <li class="main_menu__name donationMenu">
-                            <a href="">후원하기</a>
+                            <a href="../../html/donation/donation01.html">후원하기</a>
                             <div class="main-menu donationSubMenu">
                                 <ul class="inner">
-                                    <li><a href="">후원</a></li>
-                                    <li><a href="">후원 정보 조회</a></li>
+                                    <li><a href="../../html/donation/donation01.html">후원</a></li>
+                                    <li><a href="../../html/donation/donation02.html">후원 정보 조회</a></li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </nav>
+                <!--웹을 켜면 헤더 바로 밑에 뜨는 후원 배너-->
+                <div class="donationCard">
+                    <ul class="donationCard-inner">
+                        <li>AOO와 함께하세요💛</li>
+                        <li class="goToDonation" onclick="goToDonation()">후원 바로가기</li>
+                        <button class="cancelButt">X</button>
+                    </ul>
+                </div>
             </header>
             <section>
                 <!--Represent image & sub menu nav bar-->
                 <div class="intro-section">
                     <img
-                        src="../../img/hands-2847508_1920.jpg"
+                        src="../../img/communication-bg.jpg"
                         alt=""
                         class="environ-1"
                         style="width: 100vw; height: 800px; filter: brightness(60%)"
@@ -142,12 +153,59 @@
                 </div>
                 <!--Question and answer-->
                 <div class="questionAnswer-section">
-                    <div class="text-boxs">
-                        <ul class="box" onclick="dropAnswer()">
-                            <span class="material-symbols-outlined"> arrow_right </span
-                            >질문
-                            <li></li>
-                        </ul>
+                    <div class="text-boxes">
+                        <div class="box">
+                            <ul>
+                                <span class="material-symbols-outlined" id="dropAnswer"> arrow_right </span>
+                                회원가입은 어디서 하나요?
+                                <li class="answer">
+                                    답변입니다 답변입니다답변입니다 답변입니다답변입니다 답변입니다답변
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="line"></div>
+                        <div class="box">
+                            <ul>
+                                <span class="material-symbols-outlined" id="dropAnswer"> arrow_right </span>
+                                후원을 하고 싶은데 어디에서 하면 되나요?
+                                <li class="answer">
+                                    홈페이지 메뉴 중 '후원' > '후원하기'에 들어가서 개인정보와 후원 금액을 작성해주시면
+                                    됩니다.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="line"></div>
+                        <div class="box">
+                            <ul>
+                                <span class="material-symbols-outlined" id="dropAnswer"> arrow_right </span
+                                >후원 조회를 하고 싶습니다. 어디에서 할 수 있나요?
+                                <li class="answer">
+                                    답변입니다 답변입니다답변입니다 답변입니다답변입니다 답변입니다답변입니다
+                                    답변입니다답변입니다 답변입니다답변입니다 답변입니다답변입니다 답변입니다답변입니다
+                                    답변입니다
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="line"></div>
+                        <div class="box">
+                            <ul>
+                                <span class="material-symbols-outlined" id="dropAnswer"> arrow_right </span>
+                                후원 금액을 변경하고 싶습니다. 어떻게 해야 하나요?
+                                <li class="answer">답변</li>
+                            </ul>
+                        </div>
+                        <div class="line"></div>
+                        <div class="box">
+                            <ul>
+                                <span class="material-symbols-outlined" id="dropAnswer"> arrow_right </span>
+                                캠페인에 참여하려면 어떻게 해야 하나요?
+                                <li class="answer">
+                                    답변입니다 답변입니다답변입니다 답변입니다답변입니다 답변입니다답변입니다
+                                    답변입니다답변입니다 답변입니다답변입니다 답변입니다답변입니다 답변입니다답변입니다
+                                    답변입니다
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>

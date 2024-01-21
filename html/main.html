@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
 
         <!--화면 넓이: 디바이스 넓이 / initial scale(기본 사이즈)를 1로 지정-->
@@ -25,8 +24,10 @@
 
         <link rel="stylesheet" href="../css/main.css" />
         <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/donationCard.css" />
         <script defer src="../js/main.js"></script>
         <script defer src="../js/common.js"></script>
+        <script defer src="../js/donationCard.js"></script>
 
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -38,6 +39,9 @@
     <body>
         <div class="wrap">
             <header>
+                <button  id="scrollToTopBtn" title="goToTop">Top</button>
+                <!-- onclick="scrollToTop()" -->
+
                 <nav class="navbar n-1">
                     <div class="homepage-logo">
                         <a href="../html/main.html"><img src="../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" style="width: 46px;"></a>
@@ -54,10 +58,10 @@
                         <!--jQeury: $(".navbar-main-menu a").click(function()) // main-menu ul li (메인 메뉴 클릭하면 하단 메뉴 뜨게)-->
                     <ul class="navbar-main-menu">
                          <li class="main_menu__name introMenu" >
-                            <a href="">소개</a>
+                            <a href="../html/introduction/introduction01.html">소개</a>
                                 <div class="main-menu introSubMenu">
                                     <ul class="inner">
-                                        <li ><a href="">인사말</a></li>
+                                        <li ><a href="../html/introduction/introduction01.html">인사말</a></li>
                                     </ul>
                                 </div>
                         </li>
@@ -80,26 +84,36 @@
                                 </div>
                         </li>
                         <li class="main_menu__name communicationMenu">
-                                <a href="./html/communication01.html">커뮤니케이션</a>
+                                <a href="../html/communicaton/communication01.html">커뮤니케이션</a>
                                 <div class="main-menu communicationSubMenu">
                                     <ul class="inner">
                                         <li><a href="../html/communicaton/communication01.html">자주 묻는 질문</a></li>
-                                        <li><a href="../html/communicaton/communication02.html">공지사항</a></li>
+                                        <li><a href="../html/communicaton/communication01.html">공지사항</a></li>
                                         <li><a href="">최근 소식</a></li>
                                     </ul>
                                 </div>
                         </li>
                         <li class="main_menu__name donationMenu">
-                                <a href="">후원하기</a>
+                                <a href="../html/donation/donation01.html">후원하기</a>
                                 <div class="main-menu donationSubMenu">
                                     <ul class="inner">
-                                        <li><a href="">후원</a></li>
-                                        <li><a href="">후원 정보 조회</a></li>
+                                        <li><a href="../html/donation/donation01.html">후원</a></li>
+                                        <li><a href="../html/donation/donation02.html">후원 정보 조회</a></li>
                                     </ul>
                                 </div>
                         </li>
                     </ul>
                 </nav>
+
+                <!--웹을 켜면 헤더 바로 밑에 뜨는 후원 배너-->
+                <div class="donationCard">
+                    <ul class="donationCard-inner">
+                        <li>AOO와 함께하세요💛</li>
+                        <li class="goToDonation" onclick="goToDonation()">후원 바로가기</li>
+                        <button class="cancelButt">X</button>                       
+                    </ul>
+                </div>
+
             </header>
             <section>
 

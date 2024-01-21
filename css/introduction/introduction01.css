@@ -1,121 +1,24 @@
-body {
-    /* font-size: 16px; */
-    background-color: rgb(245, 246, 246);
-    font-family: "Noto Sans KR", sans-serif;
-    height: 100%;
-}
-
-.wrap {
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 100px;
-}
-li a {
-    text-decoration: none;
-    color: rgb(30, 30, 30);
-    font-weight: bold;
-    font-size: 12px;
-}
-
-li a:hover {
-    color: rgb(91, 87, 86);
-    font-weight: bold;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-.navbar {
-    height: 50px;
-    background-color: rgb(255, 255, 255);
+/* 가장 먼저 위에 보이는 사진 */
+.intro-section {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
+    /* margin-top: -70px; */
 }
 
-.navbar a {
-    font-size: 13px;
-}
-
-.navbar-menu {
+.intro-section p {
+    height: 400px;
+    position: absolute;
     display: flex;
-}
-
-.navbar-menu > li {
-    padding-left: 10px;
-}
-
-.n-2 {
-    background-color: rgb(255, 255, 255);
-    border-top: 1px solid rgb(237, 237, 238);
-    border-bottom: 1px solid rgb(237, 237, 238);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-}
-
-.navbar-main-menu {
-    display: flex;
-    width: 100vw;
-    height: 30px;
+    top: 350px;
+    justify-content: center;
     align-items: center;
-    position: relative;
-}
-
-.main_menu__name {
-    margin: 0 auto;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main_menu__name > a {
-    font-size: 20px;
-    color: rgb(57, 57, 58);
-    font-weight: bold;
-}
-
-.main-menu ul li {
-    visibility: hidden;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.7);
-    align-items: center;
-    position: relative;
-    top: -2vh;
-    width: 19vw;
-    text-align: center;
-    line-height: 25px;
-    word-break: keep-all;
-}
-
-.main-menu ul li:nth-child(2),
-.main-menu ul li:nth-child(3) {
-    border-top: 1px solid rgb(197, 197, 199);
-}
-
-.main-menu ul li:last-child {
-    border-radius: 0 0px 10px 10px;
-}
-
-.main-menu a {
-    margin: 0 auto;
-    color: rgb(29, 29, 29);
-    font-weight: normal;
-    font-size: 16px;
-    padding: 12px 0;
-}
-
-.main-menu a:hover {
-    color: rgb(78, 79, 79);
+    font-size: 50px;
+    color: rgb(250, 251, 253);
+    width: 200px;
+    height: 200px;
+    word-break: break-all;
 }
 
 /* 이미 있는 스타일 */
@@ -158,101 +61,75 @@ article h2 {
     font-size: 28px; /* 글씨 크기 키우기 */
 }
 
+.center-head {
+    text-align: center;
+    color: black;
+    font-size: 34px;
+    margin-top: 50px;
+}
 
+.contents {
+    /* border: 1px solid red; */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+    /* position: relative; */
+    /* border: 1px solid #ccc; */
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)); */
+}
 
-.join-us-section {
-    margin-top: 200px;
-    height: 500px;
-    background-color: rgb(22, 22, 22);
-    color: white;
-    font-size: 50px;
+.content1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    background-image: linear-gradient(to bottom, rgb(35, 34, 34), rgb(0, 0, 0));
+    padding: 30px 50px 30px 0;
 }
-
-.join-us-section ul {
-    word-break: keep-all;
-    line-height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 70vh;
-    height: 300px;
-}
-
-.join-us-section img {
-    /* border: 1px solid transparent;
-    border-radius: 50%; */
-    box-shadow: 0px 0px 10px #000000;
-    height: 40vh;
-    width: 30vw;
-    filter: brightness(90%);
-}
-
-
-
-section{
-    margin-top:170px;
-    position: relative;
-    width:100%;
-}
-.center-head{
-    text-align: center;
-    color: black; 
-    font-size: 30px;
-}
-
-.contents{
-    position: relative;
-    /* border: 1px solid #ccc; */
-    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)); */
-
-}
-
-.content1{
-    display: flex;
-    padding: 50px 50px;
-
-}
-.content1>img{
-    width:60%;
+.content1 > img {
+    width: 50%;
     border-radius: 10px;
-    margin-right:20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
 }
 
-.content1-text{
-    margin-left:40px;
-}
-
-.shadow-text span{
-    font-size:70px;
-    color: #AAA;
+/*화면 줄어들면 flex정렬이 row에서 column으로 바뀌게 .. 이렇게 해야 글씨 크기는 유지하면서 그림과도 어울리게 배치할 수 있음
+/* @media screen and () {
     
+} */
+
+.content1-text {
+    margin-left: 40px;
+    line-height: 70px;
 }
 
-.content-text span{
-    color: #AAA;
-
+.shadow-text span {
+    font-size: 90px;
+    background: linear-gradient(45deg, #029aff, #42e470);
+    color: transparent;
+    background-clip: text;
+    /**
+    background-clip: background를 어디까지 적용시킬지 / text를 적어줬다는 건 text의 원래 색에 배경 그라디언트를 적용한다는 것
+    color: transparent;를 준 이유는 텍스트 원래 색의 영향을 받지 않도록 하기 위해서다.   
+    **/
 }
 
+.content-text span {
+    color: #aaa;
+}
 
-.shadow-text{
+.shadow-text {
+    /* border: 1px solid rgb(15, 53, 109); */
+    width: 100%;
     justify-self: center;
     align-items: center;
 }
 .shadow-text div {
-    font-size:50px;
+    font-size: 50px;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* 그림자 효과 설정 */
 
     opacity: 0;
     animation: fadeIn 1.5s forwards;
 }
-
 
 .shadow-text div:nth-child(1) {
     animation-delay: 0s;
@@ -270,28 +147,25 @@ section{
     animation-delay: 1.5s;
 }
 
-
-.content1-text .content-text{
-    
+.content1-text .content-text {
     opacity: 0;
     animation: fadeIn 1.5s forwards;
-    animation-delay:2.0s;
-    margin-top:60px;
-
+    animation-delay: 2s;
+    margin-top: 60px;
 }
 
-.content-text div{
-    margin-bottom:20px;
+.content-text div {
+    margin-bottom: 20px;
     line-height: 1.5;
 }
 
-.content-text{
-    color: black; 
-    font-size:20px;
+.content-text {
+    /* border: 1px solid rgb(16, 68, 68); */
+    width: 100%;
+    color: black;
+    font-size: 20px;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* 그림자 효과 설정 */
-
 }
-
 
 @keyframes fadeIn {
     from {
@@ -302,30 +176,20 @@ section{
     }
 }
 
-
-.content2{
+.content2 {
+    padding: 50px 0 50px 0;
     display: flex;
-    padding: 50px 50px;
-
+    flex-direction: column;
 }
-.google-map{
+.google-map {
     position: relative;
     height: 400px;
-    width:50%;
-    margin-right: 30px;
+    width: 100%;
+    /* margin-right: 30px; */
 }
-.content2 .content-text{
+.content2 .content-text {
     margin-top: 80px;
 }
-
-
-
-
-
-
-
-
-
 
 footer {
     position: absolute;
