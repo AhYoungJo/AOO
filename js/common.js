@@ -1,68 +1,68 @@
 $(document).ready(function () {
-    $(".introMenu a").mouseover(function () {
-        $(".introSubMenu ul li").css({
-            visibility: "visible",
-            opacity: "1",
-            transition: "1s",
-            top: "3vh",
+    $('.introMenu a').mouseover(function () {
+        $('.introSubMenu ul li').css({
+            visibility: 'visible',
+            opacity: '1',
+            transition: '1s',
+            top: '3vh',
         });
     });
 });
 $(document).ready(function () {
-    $(".activityMenu a").mouseover(function () {
-        $(".activitySubMenu ul li").css({
-            visibility: "visible",
-            opacity: "1",
-            transition: "1s",
-            top: "3vh",
+    $('.activityMenu a').mouseover(function () {
+        $('.activitySubMenu ul li').css({
+            visibility: 'visible',
+            opacity: '1',
+            transition: '1s',
+            top: '3vh',
         });
     });
 });
 $(document).ready(function () {
-    $(".businessMenu a").mouseover(function () {
-        $(".businessSubMenu ul li").css({
-            visibility: "visible",
-            opacity: "1",
-            transition: "1s",
-            top: "3vh",
+    $('.businessMenu a').mouseover(function () {
+        $('.businessSubMenu ul li').css({
+            visibility: 'visible',
+            opacity: '1',
+            transition: '1s',
+            top: '3vh',
         });
     });
 });
 
 $(document).ready(function () {
-    $(".communicationMenu a").mouseover(function () {
-        $(".communicationSubMenu ul li").css({
-            visibility: "visible",
-            opacity: "1",
-            transition: "1s",
-            top: "3vh",
+    $('.communicationMenu a').mouseover(function () {
+        $('.communicationSubMenu ul li').css({
+            visibility: 'visible',
+            opacity: '1',
+            transition: '1s',
+            top: '3vh',
         });
     });
 });
 
 $(document).ready(function () {
-    $(".donationMenu a").mouseover(function () {
-        $(".donationSubMenu ul li").css({
-            visibility: "visible",
-            opacity: "1",
-            transition: "1s",
-            top: "3vh",
+    $('.donationMenu a').mouseover(function () {
+        $('.donationSubMenu ul li').css({
+            visibility: 'visible',
+            opacity: '1',
+            transition: '1s',
+            top: '3vh',
         });
     });
 });
 
-window.addEventListener("mouseout", function () {
-    $(".main-menu ul li").css({
-        visibility: "hidden",
-        opacity: "0",
-        transition: "0.5s",
-        top: "0px",
+window.addEventListener('mouseout', function () {
+    $('.main-menu ul li').css({
+        visibility: 'hidden',
+        opacity: '0',
+        transition: '0.5s',
+        top: '0px',
     });
 });
 
 // HEAD
 $(document).ready(function () {
-    var $scrollToTopButton = $("#scrollToTopBtn");
+    var $scrollToTopButton = $('#scrollToTopBtn');
     var scrollThreshold = 0.4; // 40%
 
     // 스크롤이 전체 페이지의 40% 이상 내려갔을 때 버튼 나타나게 구현
@@ -72,27 +72,28 @@ $(document).ready(function () {
         var scrollPosition = $(this).scrollTop();
 
         if (scrollPosition > scrollThreshold * (documentHeight - windowHeight)) {
-            $scrollToTopButton.css("display", "inline-block");
+            $scrollToTopButton.css('display', 'inline-block');
         } else {
-            $scrollToTopButton.css("display", "none");
+            $scrollToTopButton.css('display', 'none');
         }
     });
 });
 
+// 스크롤이 전체 페이지의 40% 이상 내려갔을 때 버튼 나타나게 구현
+
 $(document).ready(function () {
-    var $scrollToTopButton = $("#scrollToTopBtn");
+    var $scrollToTopButton = $('#scrollToTopBtn');
     var scrollThreshold = 0.4; // 40%
 
-    // 스크롤이 전체 페이지의 40% 이상 내려갔을 때 버튼 나타나게 구현
     $(window).scroll(function () {
         var windowHeight = $(window).height();
         var documentHeight = $(document).height();
         var scrollPosition = $(this).scrollTop();
 
         if (scrollPosition > scrollThreshold * (documentHeight - windowHeight)) {
-            $scrollToTopButton.css("display", "inline-block");
+            $scrollToTopButton.css('display', 'inline-block');
         } else {
-            $scrollToTopButton.css("display", "none");
+            $scrollToTopButton.css('display', 'none');
         }
     });
 });
@@ -101,7 +102,7 @@ $(document).ready(function () {
 function scrollToTop() {
     window.scrollTo({
         top: 0,
-        behavior: "smooth",
+        behavior: 'smooth',
     });
 }
 
