@@ -1,7 +1,7 @@
 var imagePaths = [
     '/img/business01/air-problem1.png', // ".."은 상위 폴더를 나타냅니다.
     '/img/business01/air-problem2.png',
-    '/img/turtle.jpg', //임시용
+    '/img/business01/air-problem3.png', //임시용
 ];
 // 이미지를 5초 간격으로 무한루프로 표시하는 함수
 function showImages() {
