@@ -168,8 +168,8 @@
 
 #darkModeToggle {
     position: fixed;
-      top: 200px;
-      right: 100px;
+      top: 320px;
+      right: 20px;
       cursor: pointer;
       background-color: #333; /* 버튼 배경색 */
       color: #fff; /* 버튼 폰트 컬러 */
@@ -182,7 +182,8 @@
     font-size: 20px; /* 아이콘 크기 */
   }
 
+
 .dark-mode {
-    background-color: grey;
-    color: white;
+    background-color: #333 !important;
+    color: white !important;
 }
