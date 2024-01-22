@@ -35,12 +35,14 @@
         <!--Swiper-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-        <link rel="stylesheet" href="/css/common.css" />
-        <link rel="stylesheet" href="/css/business/business02.css" />
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link rel="stylesheet" href="../../css/donationCard.css" />
+        <link rel="stylesheet" href="../../css/business/business02.css" />
 
         <script defer src="../../js/campaign/campaign01.js"></script>
         <!--임시용-->
         <script defer src="../../js/common.js"></script>
+        <script defer src="../../js/donationCard.js"></script>
         <script defer src="../../js/business/business02.js"></script>
 
         <script
@@ -129,6 +131,14 @@
                         </li>
                     </ul>
                 </nav>
+                <!--웹을 켜면 헤더 바로 밑에 뜨는 후원 배너-->
+                <div class="donationCard">
+                    <ul class="donationCard-inner">
+                        <li>AOO와 함께하세요💛</li>
+                        <li class="goToDonation" onclick="goToDonation()">후원 바로가기</li>
+                        <button class="cancelButt">X</button>
+                    </ul>
+                </div>
             </header>
 
             <section class="business-section">
