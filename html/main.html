@@ -25,7 +25,6 @@
         <!--브라우저와 관계없이 CSS가 일괄적으로 적용되게끔 CSS기본값 초기화-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
 
-
         <link rel="stylesheet" href="../css/main.css" />
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/donationCard.css" />
@@ -136,7 +135,7 @@
                     <div class="goToNoticeContainer">
                         <ul>공지사항</ul>
                         <ul>
-                            <li><a href="#!">처리방침 변경 내용 안내</a></li>
+                            <li><a href="#!">개인정보 처리방침 변경 내용 안내</a></li>
                             <li><a href="#!">서비스 개선 및 시스템 점검 안내</a></li>
                             <li><a href="#!">처리방침 변경 내용</a></li>
                             <li><a href="#!">처리방침 변경 내용</a></li>
@@ -145,13 +144,22 @@
                 </div>
                 <!--캠페인 바로가기-->
                 <div class="goToBussinessSection">
-                    <div class="goToBusinessContainer">
+
+                    <div class="goBg1"></div>
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    <div class="goToBusiness01Container">
                         <ul>
-                            <li>대기 사업</li>
-                            <li>Atmospheric business</li>
+                            <h3>Atmospheric business</h3>
+                            <h3>대기 사업</h3>
                         </ul>
+                    </div>
+
+                    <div class="goBg2"></div>
+                    <i class="bi bi-arrow-left-circle-fill"></i>
+                    <div class="goToBusiness02Container">
                         <ul>
-                            <button onclic="goToBusiness01"></button>
+                            <h3>Ocean business</h3>
+                            <h3>해양 사업</h3>
                         </ul>
                     </div>
                 </div>
@@ -160,7 +168,7 @@
                     <h3>Campaign</h3>
                     <ul class="inner">
                         <p>코딩온X포스코의 행보에 동참하세요!</p>
-                        <p>Participae campaigns together with CodingOn X POSCO</p>
+                        <p>Participate campaigns together with CodingOn X POSCO</p>
                         <button onclick="goToCampagin()">참여하기</button>
                         <button onclick="goToCampagin()">Participate</button>
                     </ul>

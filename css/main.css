@@ -47,7 +47,6 @@
 .goToNoticeSection {
 	word-break: keep-all;
 	top: 0;
-	width: 100;
 	position: relative;
 	height: 70px;
 	overflow: hidden;
@@ -70,28 +69,139 @@
 	letter-spacing: 2px;
 	width: 150px;
 	text-align: center;
-	margin: 0 5vh;
+	margin: 0 2vh;
 }
 
 .goToNoticeContainer ul li {
-	width: 200px;
-	margin-right: 10vw;
+	width: 400px;
+	/* margin-right: 1vw; */
 }
 
 .goToNoticeContainer ul li a {
-	width: 200px;
+	width: 100%;
 	font-size: 15px;
 	color: #fff;
 	letter-spacing: 3px;
 	word-spacing: 3px;
 }
 
+/*사업 바로가기*/
+.goToBussinessSection {
+	position: relative;
+	height: 500px;
+}
+
+.goToBussinessSection .goToBusiness01Container {
+	background-image: url('../img/activities-bg.jpg');
+	box-shadow: 4px 4px 6px #333;
+	position: absolute;
+	text-align: right;
+	width: 50%;
+	height: 100%;
+}
+
+.bi-arrow-right-circle-fill {
+	top: 50%;
+	position: absolute;
+	font-size: 280%;
+	color: #d7d7d7;
+	z-index: 4;
+	opacity: 0;
+	right: 88%;
+	transition: opacity 0.6s ease;
+}
+.bi-arrow-left-circle-fill {
+	top: 50%;
+	position: absolute;
+	font-size: 280%;
+	color: #d7d7d7;
+	z-index: 4;
+	left: 88%;
+	opacity: 0;
+	transition: opacity 0.6s ease;
+}
+
+.goToBussinessSection .goBg1 {
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	left: -10px;
+	background-image: linear-gradient(90deg, rgb(24, 24, 24), transparent);
+	z-index: 4;
+	opacity: 0;
+	transition: opacity 0.6s ease;
+}
+
+.goToBussinessSection .goToBusiness01Container ul {
+	margin-top: 160px;
+	width: 90%;
+}
+.goToBussinessSection .goToBusiness01Container ul h3 {
+	font-size: 42px;
+	line-height: 80px;
+	/* background-image: ; */
+}
+
+.goToBussinessSection .goToBusiness02Container {
+	background-image: url('../img/communication-bg.jpg');
+	position: absolute;
+	box-shadow: 4px 4px 6px #333;
+	text-align: left;
+	width: 50%;
+	height: 100%;
+	right: 0;
+}
+
+.goToBussinessSection .goToBusiness01Container:hover,
+.goToBussinessSection .goToBusiness02Container:hover {
+	cursor: pointer;
+}
+
+.goToBussinessSection .goToBusiness02Container:hover {
+	box-shadow: -5px 3px 10px #333;
+	z-index: 3;
+}
+
+.goToBussinessSection .goToBusiness01Container:hover {
+	box-shadow: 5px 3px 10px #333;
+	z-index: 3;
+}
+
+.goToBussinessSection .goBg2 {
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	right: 0;
+	background-image: linear-gradient(-90deg, rgb(24, 24, 24), transparent);
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.6s ease;
+}
+
+.goToBussinessSection .goToBusiness02Container ul {
+	margin-top: 160px;
+	width: 90%;
+}
+
+.goToBussinessSection .goToBusiness02Container ul h3 {
+	color: #1d1d1d;
+	margin-left: 10%;
+	font-size: 42px;
+	line-height: 80px;
+}
+
+.goToBussinessSection .goToBusiness01Container ul h3:last-child,
+.goToBussinessSection .goToBusiness02Container ul h3:last-child {
+	font-size: 30px;
+	color: #333;
+}
+
 /*캠페인 바로가기*/
 .goToCampaign {
-	background-image: url(../img/activities-bg.jpg);
+	background-image: url(../img/business-atmosphere.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	width: 50%;
+	width: 100%;
 	position: relative;
 	height: 400px;
 }
