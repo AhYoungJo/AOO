@@ -18,6 +18,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--영상 위 글씨 폰트-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--영상 위 글씨 폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet"> <!--영상 위 글씨 폰트-->
+
         <!--브라우저와 관계없이 CSS가 일괄적으로 적용되게끔 CSS기본값 초기화-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
 
@@ -28,6 +32,7 @@
         <script defer src="../js/main.js"></script>
         <script defer src="../js/common.js"></script>
         <script defer src="../js/donationCard.js"></script>
+        <script defer src="../js/youtube.js"></script>
 
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -115,9 +120,22 @@
 
             </header>
             <section>
+                <div class="videoSection">
+                    <div class="youtubePlayer">
+                        <div id="player"></div>
+                        <div class="youtubeCover"></div> <!--유튜브 영상 클릭 안 되게 위에 덮어 씌울 이미지-->
+                        <h3 class="youtubeH3">One Earth, One Chance</h3>
+                    </div>
+                </div>
 
+                <div class="goToCampaginSection">
+                    <h3>One Earth, One Chance</h3><h3>One Earth, One Chance</h3><h3>One Earth, One Chance</h3><h3>One Earth, One Chance</h3><h3>One Earth, One Chance</h3><h3>One Earth, One Chance</h3><h3>One Earth, One Chance</h3><h3>One Earth, One Chance</h3>
+                </div>
 
             </section>
+
+
+
             <footer>
                 <div class="info">
                     <ul class="inner">

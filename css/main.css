@@ -1,0 +1,56 @@
+section {
+    height: 1000px;
+}
+
+.videoSection {
+    position: relative;
+    height: 500px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 유튜브 가운데 영상만 홈페이지에 출력*/
+
+.videoSection .youtubePlayer {
+    position: absolute;
+    height: 100%;
+    width: 99%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    top: 0;
+    left: 0;
+}
+
+.videoSection .youtubePlayer .youtubeCover {
+    position: absolute;
+    background-image: url("../img/youtubeCover.png");
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.videoSection .youtubeH3 {
+    position: absolute;
+    margin: 0 auto;
+    top: 56%;
+    font-size: 30px;
+    opacity: 50%;
+    color: whitesmoke;
+    opacity: 0;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.goToCampaginSection {
+    border: 1px solid rgb(0, 255, 115);
+    position: absolute;
+    height: 199px;
+}
