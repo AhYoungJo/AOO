@@ -19,7 +19,7 @@ p {
 	align-items: center;
 	font-size: 50px;
 	color: rgb(250, 251, 253);
-	/* width: 100%; */
+	width: 100%;
 	word-break: break-all;
 }
 
@@ -72,7 +72,7 @@ p {
 }
 
 .review-section .r-s-intro {
-	width: 100%;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -137,6 +137,8 @@ p {
 
 /*현재 진행 중인 캠페인*/
 .showCampagin-section {
+	position: relative;
+	height: 600px;
 	opacity: 0;
 	transform: translateY(-10px);
 }
@@ -147,79 +149,103 @@ p {
 	transition: all 0.8s ease-out;
 }
 
-.showCampagin-section > p {
+.showCampagin-section .showContainer {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.showCampagin-section .showContainer p {
+	position: absolute;
 	word-break: keep-all;
 	line-height: 50px;
-	margin: 50px 0 14px 0;
+	top: 50px;
 	font-size: 40px;
-	text-align: center;
-	padding: 20px;
 	font-family: 'Black Han Sans', sans-serif;
 	color: rgb(34, 35, 35);
 }
-.swiper2 {
+.showCampagin-section .showContainer .swiper2 {
+	position: absolute;
 	width: 300px;
 	height: 300px;
 	margin: 0 auto;
 }
 
-.swiper2 .swiper-slide {
+.showCampagin-section .showContainer .swiper2 .swiper-slide {
 	background-position: center;
 	background-size: cover;
 }
 
-.swiper2 .swiper-slide img {
+.showCampagin-section .showContainer .swiper2 .swiper-slide img {
 	border-radius: 20%;
 	display: block;
 	width: 100%;
 }
 
-.swiper2 .swiper-pagination {
+.showCampagin-section .showContainer .swiper2 .swiper-pagination {
 	position: absolute;
 	bottom: -80px;
 }
 
 /*참여 유도*/
 .join-us-section {
-	margin-top: 200px;
-	height: 500px;
+	margin-top: 100px;
+	position: relative;
+	padding: 100px 0;
+	min-height: 40vh;
 	background-color: rgb(22, 22, 22);
 	color: white;
 	font-size: 50px;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 	overflow: hidden;
 	background-image: linear-gradient(-45deg, rgb(114, 114, 117), rgb(0, 0, 0));
 }
 
 .join-us-section ul {
+	position: absolute;
 	word-break: keep-all;
 	line-height: 65px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 70vh;
-	height: 300px;
+	left: 10%;
+	width: 40%;
+	height: 100%;
 }
 
 .join-us-section img {
-	/* border: 1px solid transparent;
-    border-radius: 50%; */
-	box-shadow: 0px 0px 10px #000000;
-	height: 40vh;
-	width: 30vw;
-	filter: brightness(90%);
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	filter: brightness(50%);
+}
+
+.join-us-section input {
+	outline: 0;
+	background-color: #e9e9e9;
+}
+
+.join-us-section input:focus {
+	background-color: #fff;
 }
 
 .join-us-section button {
 	margin-right: 10px;
-	background-color: rgb(64, 64, 64);
+	background-color: #212121;
 	color: white;
-	outline: 1px solid white;
+	outline: none;
 	border-radius: 6px;
+	border: 1px solid rgb(83, 83, 83);
+	width: 90px;
+	height: 36px;
 }
 
 .join-us-section button:hover {
-	background-color: rgb(35, 34, 34);
+	background-color: rgb(64, 64, 64);
 }

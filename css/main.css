@@ -1,56 +1,104 @@
-section {
-    height: 1000px;
-}
-
+/*배경 영상*/
 .videoSection {
-    position: relative;
-    height: 500px;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	position: relative;
+	height: 500px;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-/* 유튜브 가운데 영상만 홈페이지에 출력*/
 
 .videoSection .youtubePlayer {
-    position: absolute;
-    height: 100%;
-    width: 99%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #player {
-    position: absolute;
-    width: 100%;
-    height: 120%;
-    top: 0;
-    left: 0;
+	position: absolute;
+	width: 100%;
+	height: 120%;
+	top: 0;
+	left: 0;
 }
 
 .videoSection .youtubePlayer .youtubeCover {
-    position: absolute;
-    background-image: url("../img/youtubeCover.png");
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+	position: absolute;
+	background-image: url('../img/youtubeCover.png');
+	width: 100%;
+	height: 100%;
+	opacity: 0;
 }
 
 .videoSection .youtubeH3 {
-    position: absolute;
-    margin: 0 auto;
-    top: 56%;
-    font-size: 30px;
-    opacity: 50%;
-    color: whitesmoke;
-    opacity: 0;
-    font-family: "Cormorant Garamond", serif;
+	position: absolute;
+	top: 56%;
+	font-size: 30px;
+	opacity: 50%;
+	color: whitesmoke;
+	opacity: 0;
+	font-family: 'Cormorant Garamond', serif;
 }
 
-.goToCampaginSection {
-    border: 1px solid rgb(0, 255, 115);
-    position: absolute;
-    height: 199px;
+.goToNoticeSection {
+	word-break: keep-all;
+	top: 0;
+	width: 100;
+	position: relative;
+	height: 70px;
+	overflow: hidden;
+	background-color: #1d1d1d;
 }
+
+.goToNoticeContainer {
+	position: absolute;
+	width: 50%;
+	line-height: 65px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	background-color: #191818;
+}
+
+.goToNoticeContainer ul:first-child {
+	font-size: 19px;
+	color: #fff;
+	letter-spacing: 2px;
+	width: 150px;
+	text-align: center;
+	margin: 0 5vh;
+}
+
+.goToNoticeContainer ul li {
+	width: 200px;
+	margin-right: 10vw;
+}
+
+.goToNoticeContainer ul li a {
+	width: 200px;
+	font-size: 15px;
+	color: #fff;
+	letter-spacing: 3px;
+	word-spacing: 3px;
+}
+
+/*캠페인 바로가기*/
+.goToCampaign {
+	background-image: url(../img/activities-bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 50%;
+	position: relative;
+	height: 400px;
+}
+
+/* .goToCampaignSection .swiper {
+	position: relative;
+	border: 1px solid rgb(0, 255, 115);
+	width: 100%;
+	height: 100px;
+} */
