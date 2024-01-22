@@ -30,25 +30,27 @@ function registerUser() {
 
 //고찰 : 잘못입력됬을때의 데이터를 받지않는 코드를 추가했다면 어땠을까?
 
-function loginUser() {
-    var loginEmail = $('#loginEmail').val();
-    var loginPassword = $('#loginPassword').val();
+// 데이터 입력시 비교하여 출력하는 jQuery
 
-    var existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+// function loginUser() {
+//     var checkEmail = $('#checkEmail').val();
+//     var checkPhonenumber = $('#checkPhonenumber').val();
 
-    // 입력된 이메일과 비밀번호를 가진 회원이 있는지 확인
-    var loggedInUser = existingUsers.find(function (user) {
-        return user.email === loginEmail && user.password === loginPassword;
-    });
+//     var existingUsers = JSON.parse(localStorage.getItem('users')) || [];
 
-    if (loggedInUser) {
-        alert('로그인 성공!' + loggedInUser.name + '님.');
-        // 로그인 성공 시 추가 작업을 수행할 수 있습니다.
-    } else {
-        alert('이메일 또는 비밀번호가 일치하지 않습니다.');
-    }
+//     // 입력된 이메일과 비밀번호를 가진 회원이 있는지 확인
+//     var loggedInUser = existingUsers.find(function (user) {
+//         return user.email === checkEmail && user.phonenumber === checkPhonenumber;
+//     });
 
-    $('#loginForm')[0].reset();
+//     if (loggedInUser) {
+//         alert('로그인 성공!' + loggedInUser.name + '님.');
+//         // 로그인 성공 시 추가 작업을 수행할 수 있습니다.
+//     } else {
+//         alert('이메일 또는 비밀번호가 일치하지 않습니다.');
+//     }
 
-    location.reload();
-}
+//     location.reload();
+//     $('#loginForm')[0].reset();
+
+// }
