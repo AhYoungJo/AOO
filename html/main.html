@@ -124,6 +124,7 @@
 
             </header>
             <section>
+                <!--배경 영상-->
                 <div class="videoSection">
                     <div class="youtubePlayer">
                         <div id="player"></div>
@@ -131,35 +132,41 @@
                         <h3 class="youtubeH3">One Earth, One Chance</h3>
                     </div>
                 </div>
-
-                <div class="goToCampaignSection">
-                    <div class="goToCampaignContainer">
-                        <h3>캠페인</h3>
+                <div class="goToNoticeSection">
+                    <div class="goToNoticeContainer">
+                        <ul>공지사항</ul>
                         <ul>
-                            <div class="bg1"></div>
-                            <li>
-                                <div class="bg2"></div>
-                                <div class="inner"></div>
-                                    <p>포스코X코딩온의 행보에 동참해주세요!</p>
-                                    <p>Join in AOO's campaign together</p>
-                                    <button class="goToCampaignKo">참여하기</button>
-                                    <button class="goToCampaignEn">Join</button>
-                                </div>
-                            </li>
+                            <li><a href="#!">처리방침 변경 내용 안내</a></li>
+                            <li><a href="#!">서비스 개선 및 시스템 점검 안내</a></li>
+                            <li><a href="#!">처리방침 변경 내용</a></li>
+                            <li><a href="#!">처리방침 변경 내용</a></li>
                         </ul>
                     </div>
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                          <!-- Slides -->
-                          <div class="swiper-slide">Slide 1</div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
-                        </div>
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
+                </div>
+                <!--캠페인 바로가기-->
+                <div class="goToBussinessSection">
+                    <div class="goToBusinessContainer">
+                        <ul>
+                            <li>대기 사업</li>
+                            <li>Atmospheric business</li>
+                        </ul>
+                        <ul>
+                            <button onclic="goToBusiness01"></button>
+                        </ul>
                     </div>
                 </div>
+
+                <div class="goToCampaign">
+                    <h3>Campaign</h3>
+                    <ul class="inner">
+                        <p>코딩온X포스코의 행보에 동참하세요!</p>
+                        <p>Participae campaigns together with CodingOn X POSCO</p>
+                        <button onclick="goToCampagin()">참여하기</button>
+                        <button onclick="goToCampagin()">Participate</button>
+                    </ul>
+                    
+                </div>
+
 
             </section>
 
