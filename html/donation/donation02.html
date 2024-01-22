@@ -26,8 +26,10 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
 
         <link rel="stylesheet" href="../../css/common.css" />
+        <link rel="stylesheet" href="../../css/donationCard.css" />
         <link rel="stylesheet" href="../../css/donation/donation02.css" />
         <script defer src="../../js/common.js"></script>
+        <script defer src="../../js/donationCard.js"></script>
         <script defer src="../../js/donation/donation02.js"></script>
 
         <script
@@ -89,7 +91,7 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
                             </div>
                         </li>
                         <li class="main_menu__name businessMenu">
-                            <a href="">사업</a>
+                            <a href="../../html/business/business01.html">사업</a>
                             <div class="main-menu businessSubMenu">
                                 <ul class="inner">
                                     <li><a href="../../html/business/business01.html">대기</a></li>
@@ -103,21 +105,28 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
                                 <ul class="inner">
                                     <li><a href="../../html/communicaton/communication01.html">자주 묻는 질문</a></li>
                                     <li><a href="../../html/communicaton/communication02.html">공지사항</a></li>
-                                    <li><a href="">최근 소식</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="main_menu__name donationMenu">
-                            <a href="../../html/donation/donation01.html">후원하기</a>
+                            <a href="../../html/donation/donation02.html">후원</a>
                             <div class="main-menu donationSubMenu">
                                 <ul class="inner">
-                                    <li><a href="../../html/donation/donation01.html">후원</a></li>
+                                    <li><a href="../../html/donation/donation01.html">후원 하기</a></li>
                                     <li><a href="../../html/donation/donation02.html">후원 정보 조회</a></li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </nav>
+                <!--웹을 켜면 헤더 바로 밑에 뜨는 후원 배너-->
+                <div class="donationCard">
+                    <ul class="donationCard-inner">
+                        <li>AOO와 함께하세요💛</li>
+                        <li class="goToDonation" onclick="goToDonation()">후원 바로가기</li>
+                        <button class="cancelButt">X</button>
+                    </ul>
+                </div>
             </header>
             <section>
                 <div class="intro-section">
@@ -189,7 +198,7 @@ favicons/Web/icons8-별-bubbles-32.png<!DOCTYPE html>
                             </div>
                             <div class="donation-img-content">
                                 <figure>
-                                    <img src="/img/donation02/energy-research.png" alt="" />
+                                    <img src="../../img/donation02/energy-research.png" alt="" />
                                 </figure>
                                 <p class="img-percent">6.7%</p>
                                 <p>과학 조사 및 연구 개발</p>

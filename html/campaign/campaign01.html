@@ -60,7 +60,7 @@
 
                 <nav class="navbar n-1">
                     <div class="homepage-logo">
-                        <a href="../main.html"><img src="../../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" style="width: 46px;"></a>
+                        <a href="../main.html"><img src="../../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png " alt="logo" style="width: 46px;"></a>
                     </div>
                     <ul class="navbar-menu">
                         <li><a href="">로그인</a></li>
@@ -104,15 +104,14 @@
                                 <ul class="inner">
                                     <li><a href="../../html/communicaton/communication01.html">자주 묻는 질문</a></li>
                                     <li><a href="../../html/communicaton/communication02.html">공지사항</a></li>
-                                    <li><a href="">최근 소식</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="main_menu__name donationMenu">
-                            <a href="../../html/donation/donation01.html">후원하기</a>
+                            <a href="../../html/donation/donation02.html">후원</a>
                             <div class="main-menu donationSubMenu">
                                 <ul class="inner">
-                                    <li><a href="../../html/donation/donation01.html">후원</a></li>
+                                    <li><a href="../../html/donation/donation01.html">후원하기</a></li>
                                     <li><a href="../../html/donation/donation02.html">후원 정보 조회</a></li>
                                 </ul>
                             </div>
@@ -192,29 +191,36 @@
                       </div>
                 </div>
                 <div class="showCampagin-section">
-                    <p>지금 AOO는 이러한 캠페인을 실행하고 있습니다.</p>
-                    <div class="swiper2 mySwiper2">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="../../img/now_campagin/ing1.png"/>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="../../img/now_campagin/ing2.png" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="../../img/now_campagin/ing3.png" />
-                          </div>
+                    <div class="showContainer">
+                        <p>지금 AOO는 이러한 캠페인을 실행하고 있습니다.</p>
+                        <div class="swiper2 mySwiper2">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="../../img/now_campagin/ing1.png"/>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="../../img/now_campagin/ing2.png" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="../../img/now_campagin/ing3.png" />
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <div class="join-us-section">
                         <ul>
                             <li>AOO의 캠페인에 여러분을 초대합니다.</li>
-                            <li><input type="text" name="account" id="account" placeholder="AOO1234@mail.com" style="width: 50vh; text-indent: 5px; font-size: 16px; border-radius: 7px; line-height: 30px;"></li>
-                            <li><button onclick="login()">로그인</button>
-                                <button onclick="signin()">회원가입</button>
-                            </li>
+                            <li>
+                                <from action="">
+                                    <lable for="loginAndSingin">
+                                        <input type="email" name="account" id="account" required placeholder="AOO1234@mail.com" style="width: 50%; text-indent: 5px; font-size: 16px; border-radius: 7px; line-height: 30px;"></li>
+                                        <li><button type="submit" onclick="login()">로그인</button>
+                                            <button type="submit" onclick="signin()">회원가입</button>
+                                        </li>
+                                    </lable>
+                                </from>
                         </ul> 
                         <img src="../../img/join-us.jpg" alt="environ-2-img">
                 </div>
