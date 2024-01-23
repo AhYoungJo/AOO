@@ -66,30 +66,27 @@ p {
 }
 
 .noticeDetailSection {
-	top: 50px;
 	position: relative;
-	height: 1000px;
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin-top: 200px;
+	height: 800px;
+	width: 100%;
 }
 
 .noticeDetailSection .noticeHead {
 	position: absolute;
-	top: 30px;
+	top: 20px;
 	left: 5%;
 	font-size: 36px;
+	left: 10vw;
 	height: 50px;
 	border-bottom: 3px solid rgb(193, 193, 193);
 }
 .noticeDetailSection .noticeInner {
 	position: absolute;
-	top: 130px;
+	left: 10vw;
+	top: 110px;
 }
 .noticeDetailSection .noticeInner .noticeTitle {
-	border-bottom: 2px solid rgb(193, 193, 193);
 	width: 80vw;
 	height: 80px;
 	font-size: 20px;
@@ -103,11 +100,11 @@ p {
 }
 
 .noticeDetailSection .noticeInner .noticeContent {
-	padding: 60px 0;
-	border-bottom: 2px solid rgb(193, 193, 193);
+	padding: 30px 0;
 	width: 80vw;
 	height: 90%;
-
+	border-top: 1px solid rgb(193, 193, 193);
+	border-bottom: 1px solid rgb(193, 193, 193);
 	/* position: absolute; */
 }
 .noticeDetailSection .noticeInner .noticeContent p {
@@ -116,31 +113,43 @@ p {
 
 .noticeDetailSection .noticeBottom {
 	position: absolute;
-	border-top: 2px solid rgb(193, 193, 193);
-	border-bottom: 2px solid rgb(193, 193, 193);
+	bottom: 5vh;
 	width: 80vw;
-	bottom: 20vw;
+	margin: 40px 0;
 	text-align: center;
+	left: 10vw;
+	border-top: 1px solid rgb(193, 193, 193);
+	border-bottom: 1px solid rgb(193, 193, 193);
 }
 
 .noticeDetailSection .noticeBottom p:first-child {
 	word-break: keep-all;
-	width: 100%;
+	width: 70%;
 	display: inline-flex;
 	flex-direction: row;
-	margin: 0 30px;
+	margin: 0 20px;
 }
 .noticeDetailSection .noticeBottom p:last-child {
-	width: 80%;
+	width: 50%;
 }
 
 .noticeDetailSection .noticeBottom div:first-child {
 	border-bottom: 1.5px solid rgb(193, 193, 193);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 476px) {
+	/*(공통)서브 메뉴 글자*/
+	.subMenus-section ul li a {
+		font-size: 16px;
+	}
+	.subMenus-section ul li a:hover {
+		font-size: 16px;
+	}
+	/*(공통)인트로 배경 글자*/
+	.intro-section p {
+		font-size: 30px;
+	}
 	.noticeDetailSection {
-		border: 1px solid red;
 		height: 900px;
 	}
 
@@ -166,20 +175,7 @@ p {
 	}
 
 	.noticeDetailSection .noticeBottom p:last-child {
-		border: 1px solid red;
 		width: 60%;
 		line-height: 20px;
-	}
-}
-
-@media (max-width: 476px) {
-	/*(공통)서브 메뉴 글자*/
-	.subMenus-section ul li a {
-		font-size: 16px;
-	}
-
-	/*(공통)인트로 배경 글자*/
-	.intro-section p {
-		font-size: 30px;
 	}
 }

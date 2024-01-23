@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	const scrollThreshold = 300;
+	const scrollThreshold = 175;
 
 	$(window).scroll(function () {
 		var scrollPosition = $(window).scrollTop();
@@ -64,7 +64,7 @@ const swiper2 = new Swiper('.mySwiper2', {
 });
 
 $(document).ready(function () {
-	const scrollThreshold = 1000;
+	const scrollThreshold = 740;
 	console.log(scrollThreshold);
 
 	$(window).scroll(function () {
