@@ -1,8 +1,8 @@
 /*배경 영상*/
 .videoSection {
 	position: relative;
-	height: 500px;
-	background-color: #333;
+	height: 740px;
+	background-color: #000000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -47,7 +47,6 @@
 .goToNoticeSection {
 	word-break: keep-all;
 	top: 0;
-	width: 100;
 	position: relative;
 	height: 70px;
 	overflow: hidden;
@@ -66,34 +65,208 @@
 
 .goToNoticeContainer ul:first-child {
 	font-size: 19px;
-	color: #fff;
+	color: #dadada;
 	letter-spacing: 2px;
 	width: 150px;
 	text-align: center;
-	margin: 0 5vh;
+	margin: 0 2vh;
 }
 
 .goToNoticeContainer ul li {
-	width: 200px;
-	margin-right: 10vw;
+	width: 400px;
+	/* margin-right: 1vw; */
 }
 
 .goToNoticeContainer ul li a {
-	width: 200px;
-	font-size: 15px;
-	color: #fff;
+	width: 100%;
+	font-size: 16px;
+	color: #dadada;
 	letter-spacing: 3px;
 	word-spacing: 3px;
 }
 
+/*사업 바로가기*/
+.goToBussinessSection {
+	position: relative;
+	height: 500px;
+}
+
+.goToBussinessSection .goToBusiness01Container {
+	background-image: url('../img/toGoBusiness01_Background.jpg');
+	box-shadow: 4px 4px 6px #333;
+	position: absolute;
+	text-align: right;
+	width: 50%;
+	height: 100%;
+}
+
+.bi-arrow-right-circle-fill {
+	top: 50%;
+	position: absolute;
+	font-size: 280%;
+	color: #d7d7d7;
+	z-index: 4;
+	opacity: 0;
+	right: 88%;
+	transition: opacity 0.6s ease;
+}
+.bi-arrow-left-circle-fill {
+	top: 50%;
+	position: absolute;
+	font-size: 280%;
+	color: #d7d7d7;
+	z-index: 4;
+	left: 88%;
+	opacity: 0;
+	transition: opacity 0.6s ease;
+}
+
+.goToBussinessSection .goBg1 {
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	left: -10px;
+	background-image: linear-gradient(90deg, rgb(24, 24, 24), transparent);
+	z-index: 4;
+	opacity: 0;
+	transition: opacity 0.6s ease;
+}
+
+.goToBussinessSection .goToBusiness01Container ul {
+	margin-top: 160px;
+	width: 90%;
+}
+.goToBussinessSection .goToBusiness01Container ul h3 {
+	font-size: 42px;
+	line-height: 80px;
+	color: #fff;
+}
+
+.goToBussinessSection .goToBusiness02Container {
+	background-image: url('../img/toGoBusiness02_Background.jpg');
+	position: absolute;
+	box-shadow: 4px 4px 6px #333;
+	text-align: left;
+	width: 50%;
+	height: 100%;
+	right: 0;
+}
+
+.goToBussinessSection .goToBusiness01Container:hover,
+.goToBussinessSection .goToBusiness02Container:hover {
+	cursor: pointer;
+}
+
+.goToBussinessSection .goToBusiness02Container:hover {
+	box-shadow: -5px 3px 10px #333;
+	z-index: 3;
+}
+
+.goToBussinessSection .goToBusiness01Container:hover {
+	box-shadow: 5px 3px 10px #333;
+	z-index: 3;
+}
+
+.goToBussinessSection .goBg2 {
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	right: 0;
+	background-image: linear-gradient(-90deg, rgb(24, 24, 24), transparent);
+	z-index: 4;
+	opacity: 0;
+	transition: opacity 0.6s ease;
+}
+
+.goToBussinessSection .goToBusiness02Container ul {
+	margin-top: 160px;
+	width: 90%;
+}
+
+.goToBussinessSection .goToBusiness02Container ul h3 {
+	color: #fff;
+	margin-left: 10%;
+	font-size: 42px;
+	line-height: 80px;
+}
+
+.goToBussinessSection .goToBusiness01Container ul h3:last-child,
+.goToBussinessSection .goToBusiness02Container ul h3:last-child {
+	font-size: 30px;
+	color: #333;
+}
+
 /*캠페인 바로가기*/
 .goToCampaign {
-	background-image: url(../img/activities-bg.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	position: relative;
+	height: 670px;
+}
+
+.goToCampaign .goToCampaignContainer {
+	position: absolute;
+	background-image: url(../img/goToCampaign_Background.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	width: 50%;
-	position: relative;
-	height: 400px;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+}
+
+.goToCampaign .goToCampaignContainer h3 {
+	position: absolute;
+	left: 51%;
+	top: 180px;
+	font-size: 24px;
+	padding: 14px;
+	border-bottom: #333 solid 1px;
+}
+
+.goToCampaign .goToCampaignContainer .floating {
+	position: absolute;
+	top: 145px;
+	right: 51%;
+	height: 320px;
+	width: 400px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(../img/goToCampaign_floating_heart.jpg);
+	background-attachment: local;
+}
+
+.goToCampaign .goToCampaignContainer .inner {
+	position: absolute;
+	left: 51%;
+	top: 240px;
+	width: 45%;
+	line-height: 24px;
+	word-break: keep-all;
+}
+.goToCampaign .goToCampaignContainer .inner p:first-child {
+	line-height: 36px;
+	font-size: 30px;
+}
+.goToCampaign .goToCampaignContainer .inner p {
+	padding: 10px 0;
+}
+
+.goToCampaign .goToCampaignContainer .inner button {
+	font-size: 15px;
+	width: 160px;
+	height: 30px;
+	margin-top: 20px;
+	background-color: #333;
+	border: 1px;
+	color: #fff;
+}
+
+.goToCampaign .goToCampaignContainer .inner button:hover {
+	cursor: pointer;
+	background-color: #ffffff;
+	color: #333;
+	border: 1px solid #333;
 }
 
 /* .goToCampaignSection .swiper {
