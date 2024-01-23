@@ -140,10 +140,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 !element.matches('div.main-menu')&&
                 !element.matches('ul.inner')&&
                 !element.matches('button#scrollToTopBtn') &&
-                !element.closest('div.donationCard')
+                !element.closest('div.donationCard') &&
 
-                // !element.closest('ul.donationCard-inner')
-                // !element.closest('ul.inner')
+                // index.html
+                !element.closest('h3.youtubeH3') &&
+                !element.closest('div.goToNoticeSection') &&
+                !element.closest('div.goToBussinessSection') &&
+                !element.closest('div.goToCampaign *') &&
+                // activation
+                !element.closest('div.join-us-section') 
+
+
             ) {
 
                 element.classList.toggle('dark-mode');
