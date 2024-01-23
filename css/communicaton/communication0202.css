@@ -72,7 +72,7 @@ section {
 }
 
 .noticeContainer {
-    margin-top: 50px;
+    margin-top: 30px;
     height: 1000px;
     width: 90%;
 }
@@ -81,8 +81,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    line-height: 150px;
+    font-size: 25px;
+    line-height: 100px;
     color: #333;
     font-weight: 400;
 }
@@ -91,7 +91,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: rgb(214, 214, 214);
     border-radius: 10px 10px 0 0;
 }
@@ -131,53 +131,4 @@ section {
 
 .searchingNoticeArea button:focus {
     background-color: #1e1e1e;
-}
-
-.noticeLists {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-table {
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-
-.noticeLists .noticeListBox {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-.noticeLists .noticeListBox .noticeTable {
-    height: 100%;
-    width: 100%;
-}
-
-.noticeLists .noticeListBox .noticeTable thead tr th {
-    padding: 25px;
-    background-color: #f7f6f6;
-}
-
-.noticeLists .noticeListBox .noticeTable tbody td {
-    /* border-bottom: 1px solid rgb(226, 226, 226); */
-    padding-top: 10vh;
-    border-bottom: 1px solid rgb(224, 225, 224);
-    height: 10vh;
-}
-
-.noticeLists .noticeListBox .noticeTable tbody td a {
-    font-size: 18px;
-    height: 30px;
-}
-
-.noticeLists .noticeListBox .noticeTable tbody tr td:nth-child(2) {
-    text-align: start;
-    text-indent: 30px;
-}
-
-.noticeListBox .pagination {
-    padding-top: 40px;
 }
