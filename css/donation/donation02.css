@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.environ-1 {
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+}
+
 .intro-section p {
     height: 400px;
     position: absolute;
@@ -67,6 +73,7 @@
 .donation-use-text h2 {
     font-size: 35px;
     padding-bottom: 20px;
+    line-height: 1.3;
 }
 
 .donation-use-text p {
@@ -101,6 +108,7 @@
 
 .donation-img-content p {
     padding: 10px;
+    line-height: 1.2;
 }
 
 .img-percent {
@@ -119,7 +127,6 @@
 }
 .donator-check {
     width: 100%;
-    margin-bottom: 40px;
     padding-bottom: 40px;
     padding-left: 80px;
 }
@@ -149,7 +156,7 @@
 }
 .in {
     display: flex;
-    width: 300px;
+    width: 40%;
 }
 
 .donator_button {
@@ -161,7 +168,7 @@
     background-color: rgb(0, 0, 0);
     color: white;
     width: 220px;
-    height: 60;
+    height: 50px;
     border-radius: 10px;
     font-size: 18px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -186,8 +193,45 @@
 }
 
 .donator_salute {
-    font-size: 40px;
+    width: 90%;
+    font-size: 3vw;
     display: flex;
     color: white;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width: 479px) {
+    .environ-1 {
+        padding-top: 70px;
+        min-height: 400px;
+    }
+    .intro-section p {
+        top: 180;
+    }
+    /* .donation-use-text {
+    } */
+
+    .donation-img-section {
+        flex-direction: column;
+    }
+    .donation-img-content {
+        width: 100%;
+    }
+    .donation-img-text P {
+        font-size: 25px;
+    }
+    .donator {
+        flex-direction: column;
+        padding: 0px;
+    }
+    .in {
+        width: 60%;
+    }
+    .donator-check {
+        padding: 0 0 0 15px;
+    }
+    .donator_img {
+        height: 100px;
+    }
 }
