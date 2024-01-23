@@ -121,3 +121,6 @@ p {
 .material-symbols-outlined:hover {
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+}
