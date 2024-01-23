@@ -25,6 +25,7 @@ p {
 
 /* 서브 메뉴 네비바*/
 .subMenus-section {
+	position: relative;
 	width: 100%;
 }
 .subMenus-section ul {
@@ -72,7 +73,7 @@ p {
 }
 
 .review-section .r-s-intro {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -103,13 +104,27 @@ p {
 
 .swiper1 {
 	position: relative;
-	width: 80vh;
+	width: 600px;
 	height: 200px;
 	overflow: hidden;
 }
 
+@media (max-width: 476px) {
+	.swiper1 {
+		width: 200px;
+	}
+	.swiper1 .swiper-slide {
+		font-size: 12px;
+	}
+	.swiper1 .swiper-slide img {
+		margin: 0 auto;
+	}
+	.swiper1 .swiper-slide p {
+	}
+}
+
 .swiper1 .swiper-slide {
-	line-height: 20px;
+	line-height: 18px;
 	word-break: keep-all;
 	font-size: 14px;
 	background: #fff;
@@ -117,9 +132,9 @@ p {
 
 .swiper1 .swiper-slide img {
 	display: block;
-	width: 200px;
 	height: 150px;
 	object-fit: cover;
+	margin: 0 auto;
 }
 
 .swiper1 .swiper-slide p {
@@ -248,4 +263,14 @@ p {
 
 .join-us-section button:hover {
 	background-color: rgb(64, 64, 64);
+}
+
+@media (max-width: 479px) {
+	.environ-1 {
+		padding-top: 70px;
+		min-height: 400px;
+	}
+	.intro-section p {
+		top: 180px;
+	}
 }
