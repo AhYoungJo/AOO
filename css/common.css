@@ -191,8 +191,9 @@ footer .copyright .inner {
 /*다크 모드 추가*/
 #darkModeToggle {
     position: fixed;
-      top: 320px;
-      right: 20px;
+      top: 8px;
+      right: 257px;
+      z-index: 1;
       cursor: pointer;
       background-color: #333; /* 버튼 배경색 */
       color: #fff; /* 버튼 폰트 컬러 */
