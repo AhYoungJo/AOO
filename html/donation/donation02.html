@@ -1,272 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
-        <!--화면 넓이: 디바이스 넓이 / initial scale(기본 사이즈)를 1로 지정-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--화면 넓이: 디바이스 넓이 / initial scale(기본 사이즈)를 1로 지정-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Roboto+Slab&display=swap"
-            rel="stylesheet"
-        />
+		<!--font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Roboto+Slab&display=swap"
+			rel="stylesheet"
+		/>
 
-        <!--브라우저와 관계없이 CSS가 일괄적으로 적용되게끔 CSS기본값 초기화-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+		<!--브라우저와 관계없이 CSS가 일괄적으로 적용되게끔 CSS기본값 초기화-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+		/>
 
-        <link rel="stylesheet" href="../../css/common.css" />
-        <link rel="stylesheet" href="../../css/donationCard.css" />
-        <link rel="stylesheet" href="../../css/donation/donation02.css" />
-        <script defer src="../../js/common.js"></script>
-        <script defer src="../../js/donationCard.js"></script>
-        <script defer src="../../js/donation/donation02.js"></script>
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/donationCard.css" />
+		<link rel="stylesheet" href="../../css/donation/donation02.css" />
+		<script defer src="../../js/common.js"></script>
+		<script defer src="../../js/donationCard.js"></script>
+		<script defer src="../../js/donation/donation02.js"></script>
 
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"
-        ></script>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
 
-        <!--아이콘 cdn-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-    </head>
-    <body>
-        <div class="wrap">
-            <header>
-                <button id="darkModeToggle">다크 모드</button>
+		<!--아이콘 cdn-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+		/>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<button id="darkModeToggle">다크 모드</button>
 
-                <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
+				<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+					Top
+				</button>
 
-                <nav class="navbar n-1">
-                    <div class="homepage-logo">
-                        <a href="/index.html"
-                            ><img
-                                src="../../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png"
-                                alt="logo"
-                                style="width: 46px"
-                        /></a>
-                    </div>
+				<nav class="navbar n-1">
+					<div class="homepage-logo">
+						<a href="/index.html"
+							><img
+								src="../../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png"
+								alt="logo"
+								style="width: 46px"
+						/></a>
+					</div>
 
-                    <ul class="navbar-menu">
-                        <li><a href="">로그인</a></li>
-                        <li><a href="">회원가입</a></li>
-                        <li>
-                            <a href=""><i class="bi bi-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="bi bi-instagram"></i></a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="navbar n-2">
-                    <!--jQeury: $(".navbar-main-menu a").click(function()) // main-menu ul li (메인 메뉴 클릭하면 하단 메뉴 뜨게)-->
-                    <ul class="navbar-main-menu">
-                        <li class="main_menu__name introMenu">
-                            <a href="../../html/introduction/introduction01.html">소개</a>
-                            <div class="main-menu introSubMenu">
-                                <ul class="inner">
-                                    <li><a href="../../html/introduction/introduction01.html">인사말</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="main_menu__name activityMenu">
-                            <a href="../../html/campaign/campaign01.html">활동</a>
-                            <div class="main-menu activitySubMenu">
-                                <ul class="inner">
-                                    <li><a href="../../html/campaign/campaign01.html">진행중인 캠페인</a></li>
-                                    <li><a href="../../html/campaign/campaign02-01.html">완료된 캠페인</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="main_menu__name businessMenu">
-                            <a href="../../html/business/business01.html">사업</a>
-                            <div class="main-menu businessSubMenu">
-                                <ul class="inner">
-                                    <li><a href="../../html/business/business01.html">대기</a></li>
-                                    <li><a href="../../html/business/business02.html">해양</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="main_menu__name communicationMenu">
-                            <a href="../../html/communicaton/communication01.html">커뮤니케이션</a>
-                            <div class="main-menu communicationSubMenu">
-                                <ul class="inner">
-                                    <li><a href="../../html/communicaton/communication01.html">자주 묻는 질문</a></li>
-                                    <li><a href="../../html/communicaton/communication02.html">공지사항</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="main_menu__name donationMenu">
-                            <a href="../../html/donation/donation02.html">후원</a>
-                            <div class="main-menu donationSubMenu">
-                                <ul class="inner">
-                                    <li><a href="../../html/donation/donation01.html">후원 하기</a></li>
-                                    <li><a href="../../html/donation/donation02.html">후원 정보 조회</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-                <!--웹을 켜면 헤더 바로 밑에 뜨는 후원 배너-->
-                <div class="donationCard">
-                    <ul class="donationCard-inner">
-                        <li>AOO와 함께하세요💛</li>
-                        <li class="goToDonation" onclick="goToDonation()">후원 바로가기</li>
-                        <button class="cancelButt">X</button>
-                    </ul>
-                </div>
-            </header>
-            <section>
-                <div class="intro-section">
-                    <img src="../../img/donation02-bg.jpg" alt="" class="environ-1" />
-                    <p>후원 정보</p>
-                </div>
-                <div class="subMenus-section">
-                    <ul>
-                        <li><a href="../../html/donation/donation01.html">후원 하기</a></li>
-                        <p></p>
-                        <li><a href="../../html/donation/donation02.html">후원 정보 조회</a></li>
-                    </ul>
-                </div>
-                <div class="donation-use">
-                    <div class="donation-use-text">
-                        <div>
-                            <h2>당신의 후원금은 지구 건강을 위해 사용됩니다.</h2>
-                            <p>
-                                AOO는 캠페인의 정치적, 재정적 독립성을 유지하기 위해 정부와 기업의 후원을 일체 받지
-                                않으며 <br />
-                                개인 후원자님들의 후원으로만 활동하고 있습니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="donation-img">
-                        <div class="donation-img-text">
-                            <p>후원금은 어디에 사용되나요?</p>
-                        </div>
-                        <div class="donation-img-section">
-                            <div class="donation-img-content">
-                                <figure>
-                                    <img src="../../img/donation02/air-pollution.png" alt="" />
-                                </figure>
-                                <p class="img-percent">21.4%</p>
-                                <p class="img-percent-text">대기 오염 대응</p>
-                            </div>
-                            <div class="donation-img-content">
-                                <figure>
-                                    <img src="../../img/donation02/water-pollution.png" alt="" />
-                                </figure>
-                                <p class="img-percent">18.3%</p>
-                                <p class="img-percent-text">해양 오염 대응</p>
-                            </div>
-                            <div class="donation-img-content">
-                                <figure>
-                                    <img src="../../img/donation02/purify.png" alt="" />
-                                </figure>
-                                <p class="img-percent">8.9%</p>
-                                <p class="img-percent-text">오염 물질 정화 프로그램</p>
-                            </div>
-                            <div class="donation-img-content">
-                                <figure>
-                                    <img src="../../img/donation02/campagin.png" alt="" />
-                                </figure>
-                                <p class="img-percent">26.2%</p>
-                                <p class="img-percent-text">캠페인 홍보 및 활동 지원</p>
-                            </div>
-                            <div class="donation-img-content">
-                                <figure>
-                                    <img src="../../img/donation02/training.png" alt="" />
-                                </figure>
-                                <p class="img-percent">18.5%</p>
-                                <p class="img-percent-text">교육 프로그램 운영</p>
-                            </div>
-                            <div class="donation-img-content">
-                                <figure>
-                                    <img src="../../img/donation02/energy-research.png" alt="" />
-                                </figure>
-                                <p class="img-percent">6.7%</p>
-                                <p class="img-percent-text">과학 조사 및 연구 개발</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="donator">
-                        <div class="donator-info">
-                            <fieldset class="donator-check">
-                                <div class="donator_subject">후원금 확인하기</div>
-                                <p class="donator_subject_sub">후원내역 조회시 반드시 필요한 정보입니다.</p>
-                                <div class="label_input">
-                                    <label for="" class="lab">이름</label>
-                                    <input type="text" class="in" id="checkUsername" autocomplete="off" maxlength="4" />
-                                </div>
-                                <div class="label_input">
-                                    <label for="" class="lab">휴대전화</label>
-                                    <input
-                                        type="tel"
-                                        class="in"
-                                        id="checkPhonenumber"
-                                        maxlength="11"
-                                        placeholder="-없이 입력해 주세요."
-                                    />
-                                </div>
-                                <div class="label_input">
-                                    <label for="" class="lab">이메일</label>
-                                    <input
-                                        type="text"
-                                        class="in"
-                                        id="checkEmail"
-                                        autocomplete="off"
-                                        placeholder="직접입력"
-                                    />
-                                </div>
-                            </fieldset>
-                            <div class="donator_button">
-                                <button class="btn" type="submit" onclick="loginUser()">후원금액 확인하기</button>
-                            </div>
-                        </div>
-                        <div class="donator_img">
-                            <div class="donator_salute">후원해주셔서 감사합니다.</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <footer>
-                <div class="info">
-                    <ul class="inner">
-                        <li><a href="">이용약관</a></li>
-                        <li><a href="">개인정보처리방침</a></li>
-                        <li><a href="">오시는 길</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">사이트맵</a></li>
-                        <li><a href="">후원문의 02.123.4567</a></li>
-                    </ul>
-                </div>
-                <div class="address">
-                    <ul class="inner">
-                        <li>사단법인 코딩온위원회</li>
-                        <li>대표자:코딩온</li>
-                        <li>고유번호: 123-45-67890</li>
-                        <li>[00001]서울시 코딩구 코딩로 100(코딩동)</li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <ul class="inner">
-                        COPYRIGHT@THE KOREAN COMMITTEE FOR CODINGON ENVIRONEMNT SUPPORTER.ALL RIGHT RESERVED
-                    </ul>
-                </div>
-            </footer>
-        </div>
-    </body>
+					<ul class="navbar-menu">
+						<li><a href="">로그인</a></li>
+						<li><a href="">회원가입</a></li>
+						<li>
+							<a href=""><i class="bi bi-twitter"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="bi bi-facebook"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="bi bi-instagram"></i></a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="navbar n-2">
+					<!--jQeury: $(".navbar-main-menu a").click(function()) // main-menu ul li (메인 메뉴 클릭하면 하단 메뉴 뜨게)-->
+					<ul class="navbar-main-menu">
+						<li class="main_menu__name introMenu">
+							<a href="../../html/introduction/introduction01.html">소개</a>
+							<div class="main-menu introSubMenu">
+								<ul class="inner">
+									<li>
+										<a href="../../html/introduction/introduction01.html"
+											>인사말</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="main_menu__name activityMenu">
+							<a href="../../html/campaign/campaign01.html">활동</a>
+							<div class="main-menu activitySubMenu">
+								<ul class="inner">
+									<li>
+										<a href="../../html/campaign/campaign01.html"
+											>진행중인 캠페인</a
+										>
+									</li>
+									<li>
+										<a href="../../html/campaign/campaign02-01.html"
+											>완료된 캠페인</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="main_menu__name businessMenu">
+							<a href="../../html/business/business01.html">사업</a>
+							<div class="main-menu businessSubMenu">
+								<ul class="inner">
+									<li>
+										<a href="../../html/business/business01.html">대기</a>
+									</li>
+									<li>
+										<a href="../../html/business/business02.html">해양</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="main_menu__name communicationMenu">
+							<a href="../../html/communicaton/communication01.html"
+								>커뮤니케이션</a
+							>
+							<div class="main-menu communicationSubMenu">
+								<ul class="inner">
+									<li>
+										<a href="../../html/communicaton/communication01.html"
+											>자주 묻는 질문</a
+										>
+									</li>
+									<li>
+										<a href="../../html/communicaton/communication02.html"
+											>공지사항</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="main_menu__name donationMenu">
+							<a href="../../html/donation/donation02.html">후원</a>
+							<div class="main-menu donationSubMenu">
+								<ul class="inner">
+									<li>
+										<a href="../../html/donation/donation01.html">후원 하기</a>
+									</li>
+									<li>
+										<a href="../../html/donation/donation02.html"
+											>후원 정보 조회</a
+										>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<!--웹을 켜면 헤더 바로 밑에 뜨는 후원 배너-->
+				<div class="donationCard">
+					<ul class="donationCard-inner">
+						<li>AOO와 함께하세요💛</li>
+						<li class="goToDonation" onclick="goToDonation()">후원 바로가기</li>
+						<button class="cancelButt">X</button>
+					</ul>
+				</div>
+			</header>
+			<section>
+				<div class="intro-section">
+					<div class="environ-1"></div>
+					<p>후원 정보</p>
+				</div>
+				<div class="subMenus-section">
+					<ul>
+						<li><a href="../../html/donation/donation01.html">후원 하기</a></li>
+						<p></p>
+						<li>
+							<a href="../../html/donation/donation02.html">후원 정보 조회</a>
+						</li>
+					</ul>
+				</div>
+				<div class="donation-use">
+					<div class="donation-use-text">
+						<div>
+							<h2>후원금은 지구 건강을 위해 사용됩니다.</h2>
+							<p>
+								AOO는 캠페인의 정치적, 재정적 독립성을 유지하기 위해 <br />
+								정부와 기업의 후원을 일체 받지 않으며 개인 후원자 님들의
+								후원으로만 활동하고 있습니다.
+							</p>
+						</div>
+					</div>
+					<div class="donation-img">
+						<div class="donation-img-text">
+							<p>후원금은 어떻게 사용되나요?</p>
+						</div>
+						<div class="donation-img-section">
+							<div class="donation-img-content">
+								<figure>
+									<img src="../../img/donation02/air-pollution.png" alt="" />
+								</figure>
+								<p class="img-percent">21.4%</p>
+								<p class="img-percent-text">대기 오염 대응</p>
+							</div>
+							<div class="donation-img-content">
+								<figure>
+									<img src="../../img/donation02/water-pollution.png" alt="" />
+								</figure>
+								<p class="img-percent">18.3%</p>
+								<p class="img-percent-text">해양 오염 대응</p>
+							</div>
+							<div class="donation-img-content">
+								<figure>
+									<img src="../../img/donation02/purify.png" alt="" />
+								</figure>
+								<p class="img-percent">8.9%</p>
+								<p class="img-percent-text">오염 물질 정화 프로그램</p>
+							</div>
+							<div class="donation-img-content">
+								<figure>
+									<img src="../../img/donation02/campagin.png" alt="" />
+								</figure>
+								<p class="img-percent">26.2%</p>
+								<p class="img-percent-text">캠페인 홍보 및 활동 지원</p>
+							</div>
+							<div class="donation-img-content">
+								<figure>
+									<img src="../../img/donation02/training.png" alt="" />
+								</figure>
+								<p class="img-percent">18.5%</p>
+								<p class="img-percent-text">교육 프로그램 운영</p>
+							</div>
+							<div class="donation-img-content">
+								<figure>
+									<img src="../../img/donation02/energy-research.png" alt="" />
+								</figure>
+								<p class="img-percent">6.7%</p>
+								<p class="img-percent-text">과학 조사 및 연구 개발</p>
+							</div>
+						</div>
+					</div>
+					<div class="donator">
+						<div class="donator-info">
+							<fieldset class="donator-check">
+								<div class="donator_subject">후원금 확인하기</div>
+								<p class="donator_subject_sub">
+									후원내역 조회시 반드시 필요한 정보입니다.
+								</p>
+								<div class="label_input">
+									<label for="" class="lab">이름</label>
+									<input
+										type="text"
+										class="in"
+										id="checkUsername"
+										autocomplete="off"
+										maxlength="4"
+									/>
+								</div>
+								<div class="label_input">
+									<label for="" class="lab">휴대전화</label>
+									<input
+										type="tel"
+										class="in"
+										id="checkPhonenumber"
+										maxlength="11"
+										placeholder="-없이 입력해 주세요."
+									/>
+								</div>
+								<div class="label_input">
+									<label for="" class="lab">이메일</label>
+									<input
+										type="text"
+										class="in"
+										id="checkEmail"
+										autocomplete="off"
+										placeholder="직접입력"
+									/>
+								</div>
+							</fieldset>
+							<div class="donator_button">
+								<button class="btn" type="submit" onclick="loginUser()">
+									후원금액 확인하기
+								</button>
+							</div>
+						</div>
+						<div class="donator_img">
+							<div class="donator_salute">후원해주셔서 감사합니다.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="info">
+					<ul class="inner">
+						<li><a href="">이용약관</a></li>
+						<li><a href="">개인정보처리방침</a></li>
+						<li><a href="">오시는 길</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">사이트맵</a></li>
+						<li><a href="">후원문의 02.123.4567</a></li>
+					</ul>
+				</div>
+				<div class="address">
+					<ul class="inner">
+						<li>사단법인 코딩온위원회</li>
+						<li>대표자:코딩온</li>
+						<li>고유번호: 123-45-67890</li>
+						<li>[00001]서울시 코딩구 코딩로 100(코딩동)</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<ul class="inner">
+						COPYRIGHT@THE KOREAN COMMITTEE FOR CODINGON ENVIRONEMNT
+						SUPPORTER.ALL RIGHT RESERVED
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
