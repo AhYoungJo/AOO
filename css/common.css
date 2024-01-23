@@ -209,10 +209,3 @@ footer .copyright .inner {
     background-color: #333 !important;
     color: white !important;
 }
-
-@media (max-width: 1030px) {
-    /* 호버 기능 끄기 */
-    .main_menu {
-        pointer-events: none;
-    }
-}

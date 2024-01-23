@@ -71,7 +71,7 @@
     border-bottom: 1px solid black;
 }
 .donation-use-text h2 {
-    font-size: 35px;
+    font-size: 34px;
     padding-bottom: 20px;
     line-height: 1.3;
 }
@@ -79,6 +79,7 @@
 .donation-use-text p {
     margin-top: 10px;
     font-size: 20px;
+    line-height: 1.2;
 }
 
 .donation-img {
@@ -209,8 +210,18 @@
     .intro-section p {
         top: 180px;
     }
-    /* .donation-use-text {
-    } */
+    .donation-use-text {
+        padding: 50px 0 20px 0;
+    }
+    .donation-use-text h2 {
+        margin: 10px;
+        padding: 0;
+        font-size: 27px;
+    }
+    .donation-use-text p {
+        margin: 10px;
+        font-size: 15px;
+    }
 
     .donation-img-section {
         flex-direction: column;
@@ -229,9 +240,13 @@
         width: 60%;
     }
     .donator-check {
-        padding: 0 0 0 15px;
+        padding: 10px 0 0 20px;
     }
     .donator_img {
-        height: 100px;
+        margin-top: 10px;
+        height: 150px;
+    }
+    .donator_salute {
+        font-size: 5vw;
     }
 }
