@@ -3,7 +3,7 @@ var imagePaths = [
     '/img/business02/trash_warning.png',
     '/img/business02/turtle_straw.jpg',
 ];
-// 이미지를 5초 간격으로 무한루프로 표시하는 함수
+// 이미지를 3초 간격으로 무한루프로 표시하는 함수
 function showImages() {
     var imageContainer = document.getElementById('problem-image');
     var currentIndex = 0;
