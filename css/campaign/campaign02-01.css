@@ -129,7 +129,8 @@ p {
 		font-size: 30px;
 	}
 	.finshedCampaigns-section {
-		height: 800px;
+		height: 760px;
+		margin-bottom: 100px;
 	}
 
 	.finshedCampaigns-box {
