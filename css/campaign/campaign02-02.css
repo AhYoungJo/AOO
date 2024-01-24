@@ -3,27 +3,38 @@ p {
 }
 
 /* 가장 먼저 위에 보이는 사진 */
+/*(공통)*/
 .intro-section {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.intro-section p {
+	top: 120px;
+	width: 100%;
 	height: 400px;
+	background-image: url(/img/activities-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+/*(공통)*/
+.intro-section p {
+	height: 100px;
 	position: absolute;
 	display: flex;
-	top: 350px;
 	justify-content: center;
 	align-items: center;
 	font-size: 50px;
 	color: rgb(250, 251, 253);
 	width: 100%;
-	word-break: break-all;
+	word-break: keep-all;
 }
 
 /* 서브 메뉴 네비바*/
 .subMenus-section {
+	position: relative;
+	top: 120px;
 	width: 100%;
 }
 .subMenus-section ul {
@@ -93,9 +104,6 @@ p {
 	margin-top: 50px;
 }
 
-.finshedCampaigns-list > ul > li {
-}
-
 .finshedCampaigns-list > ul > li > p {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 19px;
@@ -107,4 +115,16 @@ p {
 	/* padding: 40px; */
 	width: 300px;
 	height: 300px;
+}
+
+@media (max-width: 476px) {
+	/*(공통)서브 메뉴 글자*/
+	.subMenus-section ul li a {
+		font-size: 16px;
+	}
+
+	/*(공통)인트로 배경 글자*/
+	.intro-section p {
+		font-size: 30px;
+	}
 }
