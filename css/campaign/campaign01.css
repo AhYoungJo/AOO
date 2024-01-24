@@ -297,6 +297,16 @@ p {
 	background-color: rgb(64, 64, 64);
 }
 
+@media (max-width: 768px) {
+	.review-section .r-s-intro p {
+		font-size: 40px;
+		width: 200px;
+	}
+	.swiper1 {
+		width: 450px;
+	}
+}
+
 @media (max-width: 476px) {
 	/*(공통)서브 메뉴 글자*/
 	.subMenus-section ul li a {
@@ -366,13 +376,14 @@ p {
 	}
 	.join-us-section {
 		display: flex;
-
+		width: 100%;
 		justify-content: flex-end;
 		align-items: center;
 		margin-top: 50px;
 		height: 180px;
 		font-size: 20px;
 		padding: 70px 0;
+		margin-bottom: 100px;
 	}
 	.join-us-section ul {
 		width: 43%;

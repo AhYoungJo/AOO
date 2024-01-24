@@ -206,12 +206,15 @@ table {
 		font-size: 30px;
 	}
 
+	.noticeSection {
+		width: 100%;
+	}
 	.noticeContainer {
-		height: 80vh;
+		height: 100vh;
 	}
 
 	.noticeSectionTitle {
-		font-size: 30px;
+		font-size: 28px;
 	}
 
 	.searchNoticeBox {

@@ -1,294 +1,311 @@
 /* 가장 먼저 위에 보이는 사진 */
 /*(공통)*/
 .intro-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 120px;
-    width: 100%;
-    height: 400px;
-    background-image: url(/img/intro-top.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 120px;
+	width: 100%;
+	height: 400px;
+	background-image: url(/img/intro-top.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
 }
 /*(공통)*/
 .intro-section p {
-    position: absolute;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    color: rgb(250, 251, 253);
-    width: 100%;
-    word-break: keep-all;
+	position: absolute;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	color: rgb(250, 251, 253);
+	width: 100%;
+	word-break: keep-all;
 }
 /* 이미 있는 스타일 */
 .content-section {
-    position: relative;
-    text-align: center;
+	position: relative;
+	text-align: center;
 }
 
 .center-text {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .content-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .content-item {
-    max-width: 400px;
-    text-align: left;
+	max-width: 400px;
+	text-align: left;
 }
 
 .content-inner {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .content-inner img {
-    max-width: 100%;
-    margin-right: 20px;
+	max-width: 100%;
+	margin-right: 20px;
 }
 
 /* 추가된 부분 */
 article p {
-    text-orientation: mixed; /* 세로 쓰기 방지 */
-    white-space: nowrap; /* 줄 바꿈 방지 */
+	text-orientation: mixed; /* 세로 쓰기 방지 */
+	white-space: nowrap; /* 줄 바꿈 방지 */
 }
 
 article h2 {
-    font-size: 28px; /* 글씨 크기 키우기 */
+	font-size: 28px; /* 글씨 크기 키우기 */
 }
 
 .center-head {
-    text-align: center;
-    color: black;
-    font-size: 34px;
-    margin-top: 80px;
-    height: 30px;
+	text-align: center;
+	color: black;
+	font-size: 34px;
+	margin-top: 80px;
+	height: 30px;
 }
 
 .contents {
-    /* border: 1px solid red; */
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+	/* border: 1px solid red; */
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 
-    /* position: relative; */
-    /* border: 1px solid #ccc; */
-    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)); */
+	/* position: relative; */
+	/* border: 1px solid #ccc; */
+	/* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)); */
 }
 
 .content1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 30px 50px 30px 0; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding: 30px 50px 30px 0; */
 }
 .content1 > img {
-    width: 50%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
-}
-
-/*화면 줄어들면 flex정렬이 row에서 column으로 바뀌게 .. 이렇게 해야 글씨 크기는 유지하면서 그림과도 어울리게 배치할 수 있음
-*/
-@media screen and (max-width: 800px) {
-    .content1 {
-        /* 800px 이하일 때 세로 방향으로 정렬되도록 설정 */
-        flex-direction: column;
-        text-align: center; /* 가운데 정렬을 유지하기 위해 추가적인 스타일 */
-    }
-    .content1-text {
-        margin-left: 0px !important;
-    }
-    .content1 > img {
-        margin-top: 150px;
-        width: 70%;
-    }
-    .content1 .content1-text {
-        margin-top: 40px;
-    }
-    .shadow-text div {
-        font-size: 30px !important;
-    }
-    .shadow-text span {
-        font-size: 60px !important;
-    }
-    .content-text {
-        font-size: 10px;
-    }
-    .content-text div,
-    .content-text div a {
-        font-size: 12px;
-        padding: 0 16px;
-    }
-
-    .center-head {
-        margin-top: 80px;
-        font-size: 30px !important;
-    }
+	width: 50%;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
 }
 
 .content1-text {
-    margin-top: 136px;
-    margin-left: 40px;
-    line-height: 70px;
+	margin-top: 136px;
+	margin-left: 40px;
+	line-height: 70px;
 }
 
 .shadow-text span {
-    font-size: 90px;
-    background: linear-gradient(45deg, #029aff, #42e470);
-    color: transparent;
-    background-clip: text;
-    /**
+	font-size: 90px;
+	background: linear-gradient(45deg, #029aff, #42e470);
+	color: transparent;
+	background-clip: text;
+	/**
     background-clip: background를 어디까지 적용시킬지 / text를 적어줬다는 건 text의 원래 색에 배경 그라디언트를 적용한다는 것
     color: transparent;를 준 이유는 텍스트 원래 색의 영향을 받지 않도록 하기 위해서다.   
     **/
 }
 
 .content-text span {
-    color: #aaa;
+	color: #aaa;
 }
 
 .content-text div,
 .content-text div a {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 .shadow-text {
-    /* border: 1px solid rgb(15, 53, 109); */
-    width: 100%;
-    justify-self: center;
-    align-items: center;
+	/* border: 1px solid rgb(15, 53, 109); */
+	width: 100%;
+	justify-self: center;
+	align-items: center;
 }
 .shadow-text div {
-    font-size: 50px;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* 그림자 효과 설정 */
+	font-size: 50px;
+	text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* 그림자 효과 설정 */
 
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
+	opacity: 0;
+	animation: fadeIn 1.5s forwards;
 }
 
 .shadow-text div:nth-child(1) {
-    animation-delay: 0s;
+	animation-delay: 0s;
 }
 
 .shadow-text div:nth-child(2) {
-    animation-delay: 0.5s;
+	animation-delay: 0.5s;
 }
 
 .shadow-text div:nth-child(3) {
-    animation-delay: 1s;
+	animation-delay: 1s;
 }
 
 .shadow-text div:nth-child(4) {
-    animation-delay: 1.5s;
+	animation-delay: 1.5s;
 }
 
 .content1-text .content-text {
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
-    animation-delay: 2s;
-    margin-top: 60px;
+	opacity: 0;
+	animation: fadeIn 1.5s forwards;
+	animation-delay: 2s;
+	margin-top: 60px;
 }
 
 .content-text div {
-    margin-bottom: 20px;
-    line-height: 1.5;
+	margin-bottom: 20px;
+	line-height: 1.5;
 }
 
 .content-text {
-    /* border: 1px solid rgb(16, 68, 68); */
-    width: 100%;
-    color: black;
-    font-size: 20px;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* 그림자 효과 설정 */
+	/* border: 1px solid rgb(16, 68, 68); */
+	width: 100%;
+	color: black;
+	font-size: 20px;
+	text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* 그림자 효과 설정 */
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 #map {
-    height: 400px;position: relative;
-    height: 400px;
-    width: 100%;
-  }
+	height: 400px;
+	position: relative;
+	height: 400px;
+	width: 100%;
+}
 
 .content2 {
-    padding: 50px 0 50px 0;
-    display: flex;
-    flex-direction: column;
+	padding: 50px 0 50px 0;
+	display: flex;
+	flex-direction: column;
 }
 .google-map {
-    position: relative;
-    height: 400px;
-    width: 100%;
-    /* margin-right: 30px; */
+	position: relative;
+	height: 400px;
+	width: 100%;
+	/* margin-right: 30px; */
 }
 .content2 .content-text {
-    margin-top: 80px;
+	margin-top: 80px;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    font-size: 10px;
-    text-indent: 23px;
-    height: 100px;
-    width: 100%;
-    background-color: rgb(65, 67, 67);
-    padding-top: 20px;
-    line-height: 23px;
+	position: absolute;
+	bottom: 0;
+	font-size: 10px;
+	text-indent: 23px;
+	height: 100px;
+	width: 100%;
+	background-color: rgb(65, 67, 67);
+	padding-top: 20px;
+	line-height: 23px;
 }
 
 footer a {
-    font-size: 10px;
-    color: rgb(106, 107, 107);
+	font-size: 10px;
+	color: rgb(106, 107, 107);
 }
 
 footer .info .inner {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 footer .address .inner {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 footer .copyright .inner {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 /*미디어 쿼리로 메뉴 가로 길이 조절하기*/
 
 #scrollToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 16px;
-    padding: 10px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-    /* transition: 0.7s ease-in-out; */
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 16px;
+	padding: 10px;
+	border: none;
+	background-color: #007bff;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+	/* transition: 0.7s ease-in-out; */
 }
 
+/*화면 줄어들면 flex정렬이 row에서 column으로 바뀌게 .. 이렇게 해야 글씨 크기는 유지하면서 그림과도 어울리게 배치할 수 있음
+*/
+@media (max-width: 768px) {
+	.content-section {
+		height: 1300px;
+	}
+	.content1 {
+		/* 800px 이하일 때 세로 방향으로 정렬되도록 설정 */
+		flex-direction: column;
+		text-align: center; /* 가운데 정렬을 유지하기 위해 추가적인 스타일 */
+	}
+	.content1-text {
+		margin-left: 0px !important;
+	}
+	.content1 > img {
+		margin-top: 150px;
+		width: 70%;
+	}
+	.content1 .content1-text {
+		margin-top: 40px;
+	}
+	.shadow-text div {
+		font-size: 30px !important;
+	}
+	.shadow-text span {
+		font-size: 60px !important;
+	}
+	.content-text {
+		font-size: 10px;
+	}
+	.content-text div,
+	.content-text div a {
+		font-size: 12px;
+		padding: 0px 10px;
+	}
 
+	.center-head {
+		margin-top: 80px;
+		font-size: 30px !important;
+	}
+
+	footer {
+		height: 280px;
+		text-align: center;
+	}
+	footer .info .inner,
+	footer .address .inner,
+	footer .copyright .inner {
+		width: 100%;
+		font-size: 10px;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		/* overflow: auto; */
+	}
+}
