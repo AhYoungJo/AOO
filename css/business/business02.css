@@ -4,39 +4,39 @@
 /* 가장 먼저 위에 보이는 사진 */
 /*(공통)*/
 .intro-section {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 120px;
-	width: 100%;
-	height: 400px;
-	background-image: url(/img/business-ocean.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 120px;
+    width: 100%;
+    height: 400px;
+    background-image: url(/img/business-ocean.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 /*(공통)*/
 .intro-section p {
-	position: absolute;
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 50px;
-	color: rgb(250, 251, 253);
-	width: 100%;
-	word-break: keep-all;
+    position: absolute;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(250, 251, 253);
+    width: 100%;
+    word-break: keep-all;
 }
 
 /* 서브 메뉴 네비바*/
 /*(공통)*/
 .subMenus-section {
-	position: relative;
-	top: 120px;
-	width: 100%;
-	z-index: 3;
+    position: relative;
+    top: 120px;
+    width: 100%;
+    z-index: 3;
 }
 .subMenus-section ul {
     border-bottom: 2px solid rgb(237, 237, 238);
@@ -71,7 +71,7 @@
 
 .purpose {
     width: 100%;
-    height: 500px;
+    height: 400px;
     text-align: center;
 }
 .purpose-head {
@@ -80,7 +80,7 @@
 }
 
 .purpose-content {
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 22px;
     line-height: 30px;
 }
@@ -123,7 +123,8 @@
     width: 100%;
     height: 600px;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 .project-head {
@@ -158,42 +159,43 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
     margin: 50px 0px;
 }
+.content-text {
+    width: 70%;
+
+    line-height: 20px;
+}
 
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 
-#image-container {
-    margin: auto;
-    height: 100%;
-}
 /* 모바일 세로 (해상도 ~ 479px)*/
 @media (max-width: 476px) {
-	/*(공통)서브 메뉴 글자*/
-	.subMenus-section ul li a {
-		font-size: 16px;
-	}
-	.subMenus-section ul li a:hover {
-		font-size: 16px;
-	}
-	/*(공통)인트로 배경 글자*/
-	.intro-section p {
-		font-size: 30px;
-	}
-    .purpose{
-        height:300px;
+    /*(공통)서브 메뉴 글자*/
+    .subMenus-section ul li a {
+        font-size: 16px;
     }
-    .purpose-head{
-        font-size:20px;
+    .subMenus-section ul li a:hover {
+        font-size: 16px;
     }
-    .purpose-content{
-        font-size:12px;
-        margin-top:50px;
+    /*(공통)인트로 배경 글자*/
+    .intro-section p {
+        font-size: 30px;
+    }
+    .purpose {
+        height: 300px;
+    }
+    .purpose-head {
+        font-size: 20px;
+    }
+    .purpose-content {
+        font-size: 12px;
+        margin-top: 50px;
     }
     /* 심각성 부분*/
-    .business-name{
-        font-size:20px;
-        margin-bottom:50px;
+    .business-name {
+        font-size: 20px;
+        margin-bottom: 50px;
     }
-    .problem{
+    .problem {
         flex-direction: column-reverse;
     }
     .problem #problem-image {
@@ -221,16 +223,15 @@
         font-size: 20px;
     }
 
-    .project-contents{
+    .project-contents {
         flex-direction: column;
         text-align: center;
-
     }
 
     .project-contents > div {
         height: 300px;
         width: 100%;
-        margin-bottom:180px;
+        margin-bottom: 180px;
 
         text-align: center;
         align-items: center;
@@ -239,15 +240,13 @@
         justify-content: space-around;
     }
 
-    .business-project{
-        margin-top:100px;
+    .business-project {
+        margin-top: 100px;
     }
-    .content-head{
-        font-size:17px;
+    .content-head {
+        font-size: 17px;
     }
-    section{
+    section {
         padding-bottom: 790px;
     }
 }
-
-
