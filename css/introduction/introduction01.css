@@ -223,6 +223,12 @@ article h2 {
     }
 }
 
+#map {
+    height: 400px;position: relative;
+    height: 400px;
+    width: 100%;
+  }
+
 .content2 {
     padding: 50px 0 50px 0;
     display: flex;
@@ -285,23 +291,4 @@ footer .copyright .inner {
     /* transition: 0.7s ease-in-out; */
 }
 
-#darkModeToggle {
-    position: fixed;
-    top: 320px;
-    right: 20px;
-    cursor: pointer;
-    background-color: #333; /* 버튼 배경색 */
-    color: #fff; /* 버튼 폰트 컬러 */
-    padding: 10px; /* 버튼 안쪽 여백 */
-    border: none; /* 테두리 없음 */
-    border-radius: 5px; /* 버튼 둥근 테두리 */
-}
 
-#darkModeToggle i {
-    font-size: 20px; /* 아이콘 크기 */
-}
-
-.dark-mode {
-    background-color: #333 !important;
-    color: white !important;
-}
