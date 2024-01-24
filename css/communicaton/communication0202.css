@@ -147,7 +147,9 @@ section {
 	.subMenus-section ul li a {
 		font-size: 16px;
 	}
-
+	.subMenus-section ul li a:hover {
+		font-size: 16px;
+	}
 	/*(공통)인트로 배경 글자*/
 	.intro-section p {
 		font-size: 30px;
