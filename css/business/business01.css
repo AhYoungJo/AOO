@@ -229,7 +229,7 @@
     .project-contents > div {
         height: 300px;
         width: 100%;
-        margin-bottom:50px;
+        margin-bottom:180px;
         text-align: center;
         align-items: center;
         display: flex;
@@ -243,6 +243,6 @@
         font-size:17px;
     }
     section{
-        margin-bottom: 640px;
+        padding-bottom: 790px;
     }
 }
