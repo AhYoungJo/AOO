@@ -240,8 +240,8 @@
     .content-head{
         font-size:17px;
     }
-    footer{
-        top:120%;
+    section{
+        margin-bottom: 640px;
     }
 }
 
