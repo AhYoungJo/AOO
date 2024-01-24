@@ -237,10 +237,16 @@
         flex-direction: column;
         justify-content: space-around;
     }
+
+    .business-project{
+        margin-top:100px;
+    }
     .content-head{
         font-size:17px;
     }
-    footer{
-        top:120%;
+    section{
+        margin-bottom: 640px;
     }
 }
+
+
