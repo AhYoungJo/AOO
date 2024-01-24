@@ -33,7 +33,11 @@ p {
 
 /* 서브 메뉴 네비바*/
 .subMenus-section {
+	position: relative;
+	top: 120px;
 	width: 100%;
+	z-index: 3;
+	/* border: 1px solid red; */
 }
 .subMenus-section ul {
 	border-bottom: 2px solid rgb(237, 237, 238);
@@ -46,9 +50,7 @@ p {
 }
 
 .subMenus-section ul li {
-	position: relative;
-	top: 120px;
-	width: 100%;
+	display: flex;
 }
 
 .subMenus-section ul li a {
@@ -65,6 +67,7 @@ p {
 
 /*완료된 캠페인*/
 .finshedCampaigns-section {
+	margin-top: 120px;
 	position: relative;
 	/* border: 1px solid red; */
 	height: 1300px;
@@ -118,9 +121,24 @@ p {
 	.subMenus-section ul li a {
 		font-size: 16px;
 	}
-
+	.subMenus-section ul li a:hover {
+		font-size: 16px;
+	}
 	/*(공통)인트로 배경 글자*/
 	.intro-section p {
 		font-size: 30px;
+	}
+	.finshedCampaigns-section {
+		height: 800px;
+	}
+
+	.finshedCampaigns-box {
+		max-width: 45vw;
+		min-width: 320px;
+	}
+	.finshedCampaigns-list > ul > li > img {
+		/* padding: 40px; */
+		width: 150px;
+		height: 150px;
 	}
 }
