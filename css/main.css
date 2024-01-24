@@ -1,4 +1,11 @@
 /*배경 영상*/
+html,
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .videoSection {
     position: relative;
     height: 740px;
@@ -44,6 +51,7 @@
     font-family: "Cormorant Garamond", serif;
 }
 
+/*공지사항 바로가기*/
 .goToNoticeSection {
     word-break: keep-all;
     top: 0;
@@ -55,11 +63,12 @@
 
 .goToNoticeContainer {
     position: absolute;
-    width: 50%;
+    left: 0;
+    width: 88%;
     line-height: 65px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-color: #191818;
 }
 
@@ -89,6 +98,7 @@
 .goToBussinessSection {
     position: relative;
     height: 500px;
+    font-family: "Merriweather", "Noto Sans KR", serif;
 }
 
 .goToBussinessSection .goToBusiness01Container {
@@ -139,7 +149,7 @@
 .goToBussinessSection .goToBusiness01Container ul h3 {
     font-size: 42px;
     line-height: 80px;
-    color: #fff;
+    color: rgb(213, 241, 255);
 }
 
 .goToBussinessSection .goToBusiness02Container {
@@ -184,7 +194,7 @@
 }
 
 .goToBussinessSection .goToBusiness02Container ul h3 {
-    color: #fff;
+    color: rgb(213, 241, 255);
     margin-left: 10%;
     font-size: 42px;
     line-height: 80px;
@@ -193,7 +203,7 @@
 .goToBussinessSection .goToBusiness01Container ul h3:last-child,
 .goToBussinessSection .goToBusiness02Container ul h3:last-child {
     font-size: 30px;
-    color: #333;
+    color: #fff;
 }
 
 /*캠페인 바로가기*/
@@ -247,9 +257,9 @@
 .goToCampaign .goToCampaignContainer .inner p:first-child {
     line-height: 36px;
     font-size: 30px;
+    padding-bottom: 10px;
 }
 .goToCampaign .goToCampaignContainer .inner p {
-    padding: 10px 0;
 }
 
 .goToCampaign .goToCampaignContainer .inner button {
@@ -275,3 +285,145 @@
 	width: 100%;
 	height: 100px;
 } */
+
+@media (max-width: 769px) {
+    .videoSection {
+        /* height: 436px; */
+    }
+    #player {
+        height: 126%;
+    }
+    .videoSection .youtubePlayer {
+        height: 436px;
+    }
+    .videoSection .youtubeH3 {
+        font-size: 30px;
+        top: 59%;
+    }
+    .goToBussinessSection .goToBusiness01Container ul h3,
+    .goToBussinessSection .goToBusiness02Container ul h3 {
+        font-size: 37px;
+    }
+
+    .goToBussinessSection .goToBusiness01Container ul h3:last-child,
+    .goToBussinessSection .goToBusiness02Container ul h3:last-child {
+        font-size: 25px;
+    }
+    .goToBussinessSection .goBg1,
+    .goToBussinessSection .goBg2,
+    .bi-arrow-left-circle-fill,
+    .bi-arrow-right-circle-fill {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 476px) {
+    .videoSection {
+        height: 320px;
+    }
+    #player {
+        height: 135%;
+    }
+    .videoSection .youtubePlayer {
+        height: 320px;
+    }
+    .videoSection .youtubeH3 {
+        font-size: 20px;
+        top: 63.8%;
+    }
+
+    /*사업 바로가기*/
+    .goToBussinessSection {
+        height: 300px;
+    }
+    .goToBussinessSection .goToBusiness01Container ul,
+    .goToBussinessSection .goToBusiness02Container ul {
+        margin-top: 90px;
+    }
+    .goToBussinessSection .goToBusiness01Container ul h3,
+    .goToBussinessSection .goToBusiness02Container ul h3 {
+        line-height: 50px;
+        font-size: 20px;
+        color: rgb(213, 241, 255);
+    }
+
+    .goToBussinessSection .goToBusiness01Container ul h3:last-child,
+    .goToBussinessSection .goToBusiness02Container ul h3:last-child {
+        font-size: 15px;
+        color: white;
+    }
+
+    .goToBussinessSection .goBg1,
+    .goToBussinessSection .goBg2,
+    .bi-arrow-left-circle-fill,
+    .bi-arrow-right-circle-fill {
+        display: none;
+    }
+
+    /*공지사항 바로가기*/
+    .goToNoticeSection {
+        height: 50px;
+    }
+    .goToNoticeContainer {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        line-height: 50px;
+    }
+
+    .goToNoticeContainer ul:first-child {
+        width: 50%;
+        font-size: 13px;
+    }
+    .goToNoticeContainer ul li {
+        width: 100%;
+    }
+    .goToNoticeContainer ul li a {
+        font-size: 10px;
+    }
+
+    /*캠페인 바로가기*/
+
+    .goToCampaign {
+        height: 643px;
+    }
+
+    .goToCampaign .goToCampaignContainer .floating {
+        top: 50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 200px;
+        width: 240px;
+    }
+    .goToCampaign .goToCampaignContainer h3 {
+        top: 300px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        color: #474747;
+    }
+    .goToCampaign .goToCampaignContainer .inner {
+        top: 353px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .goToCampaign .goToCampaignContainer h3 {
+        font-size: 18px;
+    }
+    .goToCampaign .goToCampaignContainer .inner {
+    }
+    .goToCampaign .goToCampaignContainer .inner p:first-child {
+        line-height: 25px;
+        font-size: 23px;
+    }
+    .goToCampaign .goToCampaignContainer .inner p {
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
