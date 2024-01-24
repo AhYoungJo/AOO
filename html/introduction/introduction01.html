@@ -33,7 +33,9 @@
 
         <!-- <script defer src="./js/introductionPage.js"></script> -->
 
-        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuvD-9eN2rgrLNe1vINsd0f4LPzFp74-k&callback=console.debug&libraries=maps,marker&v=beta"></script>
+        <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuvD-9eN2rgrLNe1vINsd0f4LPzFp74-k&callback=console.debug&libraries=maps,marker&v=beta"></script> -->
+        <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuvD-9eN2rgrLNe1vINsd0f4LPzFp74-k&callback=initMap&libraries=maps,marker&v=beta"></script> -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -44,7 +46,6 @@
     <body>
         <div class="wrap">
             <header>
-                <button id="darkModeToggle">다크 모드</button>
 
                 <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
                 
@@ -53,6 +54,8 @@
                         <a href="/index.html"><img src="../../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" style="width: 46px;"></a>
                     </div>
                     <ul class="navbar-menu">
+                        <li><button id="darkModeToggle">다크 모드</button></li>
+
                         <li><a href="">로그인</a></li>
                         <li><a href="">회원가입</a></li>
                         <li><a href=""><i class="bi bi-twitter"></i></li>
@@ -121,7 +124,7 @@
 
             <section>
                 <div class="intro-section">
-                    <img src="../../img/intro-top.jpg" alt="" class="environ-1" style="width: 100%; height: 800px; filter: brightness(60%)">
+                    <div class="introductionBg"></div>
                     <p>소개</p>
                 </div>
                 
@@ -152,13 +155,14 @@
                 <div class="contents">
         
                     <div class = content2 >
-                        <div class="google-map">
+                        <!-- <div class="google-map">
                             <gmp-map center="37.547607421875,126.94568634033203" zoom="20" map-id="DEMO_MAP_ID">
                                 <gmp-advanced-marker position="37.547607421875,126.94568634033203" title="My location">
                                 </gmp-advanced-marker>
                             </gmp-map>
-                        </div>
-        
+                        </div> -->
+                        <div id="map"></div>
+
                         <div class="content-text">
                             <div>- 주소: 서울특별시 마포구 숭문4길 6</div>
                             <div>- 대흥역에서 도보로 8분 거리</div>
@@ -197,5 +201,11 @@
                 </div>
             </footer>
         </div>
+
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuvD-9eN2rgrLNe1vINsd0f4LPzFp74-k&callback=initMap&v=weekly"
+        defer
+      ></script>
+
     </body>
 </html>

@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
     darkModeToggle.addEventListener('click', function () {
         const bodyElements = body.querySelectorAll('*');
         // bodyElements.forEach(element => element.classList.toggle('dark-mode'));
-
+        console.log("눌림");
         bodyElements.forEach((element) => {
             if (
                 !element.closest('footer') &&

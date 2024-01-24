@@ -56,7 +56,6 @@
     <body>
         <div class="wrap">
             <header>
-                <button id="darkModeToggle">다크 모드</button>
 
                 <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
 
@@ -65,6 +64,8 @@
                         <a href="/index.html"><img src="../../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png " alt="logo" style="width: 46px;"></a>
                     </div>
                     <ul class="navbar-menu">
+                        <li><button id="darkModeToggle">다크 모드</button></li>
+
                         <li><a href="">로그인</a></li>
                         <li><a href="">회원가입</a></li>
                         <li><a href=""><i class="bi bi-twitter"></i></a></li>
@@ -144,13 +145,9 @@
                 </div>
                 <div class="review-section">
                     <div class="r-s-intro">
-                        <ul id="airline">
-                            <img src="../../img/airline-185.gif" alt="airline" class="airline">
-                        </ul>
+                        <ul class="airline"></ul>
                         <p>2만명의 사람들이 함께 만들어가는 아름다운 환경</p>
-                        <ul id="woolf">
-                            <img src="../../img/animal.gif" alt="animal" style="position: absolute; width: 310px; height: 220px; right: -60px; bottom: 30px;border: 1px solid transparent; border-radius: 50%;">
-                        </ul>
+                        <!-- <ul class="woolf"></ul> -->
                     </div>
                     <!--siwper review-->
                     <h3 style="font-size: 23px;">
@@ -213,18 +210,18 @@
                 </div>
                 <div class="join-us-section">
                         <ul>
-                            <li>AOO의 캠페인에 여러분을 초대합니다.</li>
+                            <li class="joinTitle">AOO의 캠페인에 여러분을 초대합니다.</li>
                             <li>
                                 <from action="">
                                     <lable for="loginAndSingin">
-                                        <input type="email" name="account" id="account" required placeholder="AOO1234@mail.com" style="width: 50%; text-indent: 5px; font-size: 16px; border-radius: 7px; line-height: 30px;"></li>
+                                        <input type="email" name="account" id="account" required placeholder="AOO1234@mail.com"></li>
                                         <li><button type="submit" onclick="login()">로그인</button>
                                             <button type="submit" onclick="signin()">회원가입</button>
                                         </li>
                                     </lable>
                                 </from>
                         </ul> 
-                        <img src="../../img/join-us.jpg" alt="environ-2-img">
+                        <div class="environ-2-img"></div>
                 </div>
             <section>
             <footer>
