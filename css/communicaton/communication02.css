@@ -4,8 +4,8 @@ p {
     line-height: 70px;
 }
 
-/* 가장 먼저 위에 보이는 사진 */
-/*(공통)*/
+* 가장 먼저 위에 보이는 사진 *
+*(공통)*
 .intro-section {
     position: relative;
     display: flex;
@@ -14,13 +14,13 @@ p {
     top: 120px;
     width: 100%;
     height: 400px;
-    background-image: url(/img/communication-bg.jpg);
+    background-image: url(imgcommunication-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
 }
-/*(공통)*/
+*(공통)*
 .intro-section p {
     height: 100px;
     position: absolute;
@@ -33,7 +33,7 @@ p {
     word-break: keep-all;
 }
 
-/* 서브 메뉴 네비바*/
+* 서브 메뉴 네비바*
 .subMenus-section {
     position: relative;
     top: 120px;
@@ -106,14 +106,14 @@ section {
     border-radius: 10px 10px 0 0;
 }
 .searchingNoticeArea {
-    display: inline-flex; /*인풋을 기준으로 가로 높이 정렬*/
+    display: inline-flex; *인풋을 기준으로 가로 높이 정렬*
 }
 .searchingNoticeArea input {
     width: 300px;
     text-indent: 10px;
     border-radius: 3px 0 0 3px;
     color: #333;
-    outline: none; /*input 포커싱할 때 생기는 라인*/
+    outline: none; *input 포커싱할 때 생기는 라인*
 }
 
 .searchingNoticeArea input:focus-within {
@@ -173,7 +173,7 @@ table {
 }
 
 .noticeLists .noticeListBox .noticeTable tbody td {
-    /* border-bottom: 1px solid rgb(226, 226, 226); */
+    * border-bottom: 1px solid rgb(226, 226, 226); *
     padding-top: 10vh;
     border-bottom: 1px solid rgb(224, 225, 224);
     height: 10vh;
@@ -194,14 +194,14 @@ table {
 }
 
 @media (max-width: 476px) {
-    /*(공통)서브 메뉴 글자*/
+    *(공통)서브 메뉴 글자*
     .subMenus-section ul li a {
         font-size: 16px;
     }
     .subMenus-section ul li a:hover {
         font-size: 16px;
     }
-    /*(공통)인트로 배경 글자*/
+    *(공통)인트로 배경 글자*
     .intro-section p {
         font-size: 30px;
     }

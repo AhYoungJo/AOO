@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$('.goToDonation').click(function () {
-		location.href = '/html/donation/donation01.html';
+		location.href = 'htmldonationdonation01.html';
 	});
 });
 
