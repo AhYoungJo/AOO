@@ -19,8 +19,8 @@ $(document).ready(function () {
 
 $(function () {
 	const swiper1 = new Swiper('.mySwiper1', {
-		// slidesPerView: 3,
-		// spaceBetween: 50,
+		slidesPerView: 3,
+		spaceBetween: 50,
 		freeMode: true,
 		autoplay: {
 			delay: 2000,
@@ -30,7 +30,6 @@ $(function () {
 			el: '.swiper-pagination',
 			clickable: true,
 		},
-		// direction: 'vertical',
 	});
 	//swiper안에 Breakpoints를 쓰면 한번 실행 후엔 실행한 결과가 돌아오지 않음
 	//그래서 onResize() 메소드를 사용
@@ -44,7 +43,7 @@ $(function () {
 				swiper1.params.slidesPerView = 1;
 				swiper1.params.spaceBetween = 30;
 			}
-			swiper1.onResize();
+			swiper1.update(); //매개변수 변경 후 재초기화
 		})
 		.resize();
 });
