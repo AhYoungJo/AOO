@@ -1,20 +1,20 @@
 $(document).ready(function () {
-	const scrollThreshold = 175;
+    const scrollThreshold = 175;
 
-	$(window).scroll(function () {
-		var scrollPosition = $(window).scrollTop();
-		if (scrollPosition > scrollThreshold) {
-			$('.r-s-intro').css({
-				opacity: '1',
-				transition: 'all 1s ease-out',
-			});
-		} else {
-			$('.r-s-intro').css({
-				opacity: '0',
-				transition: 'all 0.5s ease-out',
-			});
-		}
-	});
+    $(window).scroll(function () {
+        var scrollPosition = $(window).scrollTop();
+        if (scrollPosition > scrollThreshold) {
+            $(".r-s-intro").css({
+                opacity: "1",
+                transition: "all 1s ease-out",
+            });
+        } else {
+            $(".r-s-intro").css({
+                opacity: "0",
+                transition: "all 0.5s ease-out",
+            });
+        }
+    });
 });
 
 $(function () {
@@ -48,30 +48,30 @@ $(function () {
 		.resize();
 });
 
-const swiper2 = new Swiper('.mySwiper2', {
-	effect: 'cube',
-	grabCursor: true,
-	cubeEffect: {
-		shadow: true,
-		slideShadows: true,
-		shadowOffset: 20,
-		shadowScale: 0.94,
-	},
-	pagination: {
-		el: '.swiper-pagination',
-	},
+const swiper2 = new Swiper(".mySwiper2", {
+    effect: "cube",
+    grabCursor: true,
+    cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
 });
 
 $(document).ready(function () {
-	const scrollThreshold = 740;
-	console.log(scrollThreshold);
+    const scrollThreshold = 740;
+    console.log(scrollThreshold);
 
-	$(window).scroll(function () {
-		var scrollPosition = $(window).scrollTop();
-		if (scrollPosition > scrollThreshold) {
-			$('.showCampagin-section').addClass('visible');
-		} else {
-			$('.showCampagin-section').removeClass('visible');
-		}
-	});
+    $(window).scroll(function () {
+        var scrollPosition = $(window).scrollTop();
+        if (scrollPosition > scrollThreshold) {
+            $(".showCampagin-section").addClass("visible");
+        } else {
+            $(".showCampagin-section").removeClass("visible");
+        }
+    });
 });

@@ -1,164 +1,164 @@
 p {
-	word-break: break-all;
-	text-align: center;
-	line-height: 70px;
+    word-break: break-all;
+    text-align: center;
+    line-height: 70px;
 }
 
 /* 가장 먼저 위에 보이는 사진 */
 /*(공통)*/
 .intro-section {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 120px;
-	width: 100%;
-	height: 400px;
-	background-image: url(/img/communication-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 120px;
+    width: 100%;
+    height: 400px;
+    background-image: url(/img/communication-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 /*(공통)*/
 .intro-section p {
-	height: 100px;
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 50px;
-	color: rgb(250, 251, 253);
-	width: 100%;
-	word-break: keep-all;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(250, 251, 253);
+    width: 100%;
+    word-break: keep-all;
 }
 
 /* 서브 메뉴 네비바*/
 .subMenus-section {
-	position: relative;
-	top: 120px;
-	width: 100%;
+    position: relative;
+    top: 120px;
+    width: 100%;
 }
 .subMenus-section ul {
-	border-bottom: 2px solid rgb(237, 237, 238);
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	height: 80px;
+    border-bottom: 2px solid rgb(237, 237, 238);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
 }
 
 .subMenus-section ul li {
-	display: flex;
+    display: flex;
 }
 
 .subMenus-section ul li a {
-	font-size: 20px;
-	font-family: 'Noto Sans KR', sans-serif;
-	color: rgb(57, 57, 58);
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: rgb(57, 57, 58);
 }
 
 .subMenus-section ul li a:hover {
-	font-size: 20px;
-	font-family: 'Noto Sans KR', sans-serif;
-	color: rgb(15, 15, 95);
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: rgb(15, 15, 95);
 }
 
 /*자주 묻는 질문 */
 .questionAnswer-section {
-	margin-top: 88px;
-	min-height: 800px;
-	max-height: 2000px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 20px;
+    margin-top: 88px;
+    min-height: 800px;
+    max-height: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
 }
 
 .questionAnswer-section .qnaSectionTitle {
-	font-size: 25px;
-	line-height: 100px;
-	color: #333;
-	font-weight: 400;
-	margin-top: 80px;
+    font-size: 25px;
+    line-height: 100px;
+    color: #333;
+    font-weight: 400;
+    margin-top: 80px;
 }
 
 .questionAnswer-section .text-boxes {
-	border: 2px solid rgb(226, 226, 226);
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 76%;
-	margin-bottom: 100px;
+    border: 2px solid rgb(226, 226, 226);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 76%;
+    margin-bottom: 100px;
 }
 
 .questionAnswer-section .text-boxes .box {
-	display: flex;
-	flex-direction: row;
-	margin: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 40px 20px;
 }
 
 .questionAnswer-section .text-boxes .box ul {
-	line-height: 30px;
-	width: 100%;
+    line-height: 30px;
+    width: 100%;
 }
 
 .questionAnswer-section .text-boxes .box ul li {
-	line-height: 27px;
-	font-size: 17px;
-	text-indent: 20px;
-	padding: 24px;
-	margin-top: 18px;
+    line-height: 27px;
+    font-size: 17px;
+    text-indent: 20px;
+    padding: 24px;
+    margin-top: 18px;
 }
 
 .questionAnswer-section .text-boxes .line {
-	background-color: rgb(229, 225, 225);
-	width: 100%;
-	height: 1px;
+    background-color: rgb(229, 225, 225);
+    width: 100%;
+    height: 1px;
 }
 
 .answer {
-	display: none;
+    display: none;
 }
 
 .material-symbols-outlined {
-	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-	padding: 5px;
-	color: rgb(26, 25, 25);
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    padding: 5px;
+    color: rgb(26, 25, 25);
 }
 
 .material-symbols-outlined:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 @media (max-width: 476px) {
-	/*(공통)서브 메뉴 글자*/
-	.subMenus-section ul li a {
-		font-size: 16px;
-	}
-	/*(공통)*/
-	.subMenus-section ul li a:hover {
-		font-size: 16px;
-	}
+    /*(공통)서브 메뉴 글자*/
+    .subMenus-section ul li a {
+        font-size: 16px;
+    }
+    /*(공통)*/
+    .subMenus-section ul li a:hover {
+        font-size: 16px;
+    }
 
-	/*(공통)인트로 배경 글자*/
-	.intro-section p {
-		font-size: 30px;
-	}
-	.questionAnswer-section .text-boxes .box ul {
-		font-size: 17px;
-	}
-	.questionAnswer-section .text-boxes .box ul li {
-		font-size: 14px;
-		padding: 15px;
-		line-height: 20px;
-	}
-	.material-symbols-outlined {
-		font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
-	}
-	.questionAnswer-section {
-		margin-bottom: 100px;
-	}
+    /*(공통)인트로 배경 글자*/
+    .intro-section p {
+        font-size: 30px;
+    }
+    .questionAnswer-section .text-boxes .box ul {
+        font-size: 17px;
+    }
+    .questionAnswer-section .text-boxes .box ul li {
+        font-size: 14px;
+        padding: 15px;
+        line-height: 20px;
+    }
+    .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+    }
+    .questionAnswer-section {
+        margin-bottom: 100px;
+    }
 }

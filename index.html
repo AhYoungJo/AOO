@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
 
         <!--화면 넓이: 디바이스 넓이 / initial scale(기본 사이즈)를 1로 지정-->
@@ -18,49 +19,30 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--영상 위 글씨 폰트-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--영상 위 글씨 폰트-->
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet"> <!--영상 위 글씨 폰트-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--사업 소개 폰트-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--사업 소개 폰트-->
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet"> <!--사업 소개 폰트-->
-
         <!--브라우저와 관계없이 CSS가 일괄적으로 적용되게끔 CSS기본값 초기화-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
 
-        <link rel="stylesheet" href="/css/main.css" />
-        <link rel="stylesheet" href="/css/common.css" />
-        <link rel="stylesheet" href="/css/donationCard.css" />
-        <script defer src="/js/main.js"></script>
-        <script defer src="/js/common.js"></script>
-        <script defer src="/js/donationCard.js"></script>
-        <script defer src="/js/youtube.js"></script>
+
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/common.css" />
+        <script defer src="../js/main.js"></script>
+        <script defer src="../js/common.js"></script>
 
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-        <!--아이콘 CDN-->
+        <!--아이콘 cdn-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-        <!--Swiper CDN-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
         
     </head>
     <body>
         <div class="wrap">
             <header>
-
-                <button  id="scrollToTopBtn" title="goToTop">Top</button>
-                <!-- onclick="scrollToTop()" -->
-
                 <nav class="navbar n-1">
                     <div class="homepage-logo">
-                        <a href="index.html"><img src="../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" class="starLogo"></a>
+                        <a href="../html/main.html"><img src="../favicons/iOS Safari Web Clip/icons8-별-bubbles-60.png" alt="logo" style="width: 46px;"></a>
                     </div>
                     <ul class="navbar-menu">
-                        <li><button id="darkModeToggle">Dark</button></li>
                         <li><a href="">로그인</a></li>
                         <li><a href="">회원가입</a></li>
                         <li><a href=""><i class="bi bi-twitter"></i></li>
@@ -69,12 +51,13 @@
                     </ul>
                 </nav>
                 <nav class="navbar n-2">
+                        <!--jQeury: $(".navbar-main-menu a").click(function()) // main-menu ul li (메인 메뉴 클릭하면 하단 메뉴 뜨게)-->
                     <ul class="navbar-main-menu">
                          <li class="main_menu__name introMenu" >
-                            <a href="../html/introduction/introduction01.html">소개</a>
+                            <a href="">소개</a>
                                 <div class="main-menu introSubMenu">
                                     <ul class="inner">
-                                        <li ><a href="../html/introduction/introduction01.html">인사말</a></li>
+                                        <li ><a href="">인사말</a></li>
                                     </ul>
                                 </div>
                         </li>
@@ -97,101 +80,31 @@
                                 </div>
                         </li>
                         <li class="main_menu__name communicationMenu">
-                                <a href="../html/communicaton/communication01.html">커뮤니케이션</a>
+                                <a href="./html/communication01.html">커뮤니케이션</a>
                                 <div class="main-menu communicationSubMenu">
                                     <ul class="inner">
                                         <li><a href="../html/communicaton/communication01.html">자주 묻는 질문</a></li>
-                                        <li><a href="../html/communicaton/communication01.html">공지사항</a></li>
+                                        <li><a href="../html/communicaton/communication02.html">공지사항</a></li>
+                                        <li><a href="">최근 소식</a></li>
                                     </ul>
                                 </div>
                         </li>
                         <li class="main_menu__name donationMenu">
-                                <a href="../html/donation/donation02.html">후원</a>
+                                <a href="">후원하기</a>
                                 <div class="main-menu donationSubMenu">
                                     <ul class="inner">
-                                        <li><a href="../html/donation/donation01.html">후원하기</a></li>
-                                        <li><a href="../html/donation/donation02.html">후원 정보 조회</a></li>
+                                        <li><a href="">후원</a></li>
+                                        <li><a href="">후원 정보 조회</a></li>
                                     </ul>
                                 </div>
                         </li>
                     </ul>
                 </nav>
-
-                <!--웹을 켜면 헤더 바로 밑에 뜨는 후원 배너-->
-                <div class="donationCard">
-                    <ul class="donationCard-inner">
-                        <li>AOO와 함께하세요💛</li>
-                        <li class="goToDonation" onclick="goToDonation()">후원 바로가기</li>
-                        <button class="cancelButt">X</button>                       
-                    </ul>
-                </div>
-
             </header>
             <section>
-                <!--배경 영상-->
-                <div class="videoSection">
-                    <div class="youtubePlayer">
-                        <div id="player"></div>
-                        <div class="youtubeCover"></div> <!--유튜브 영상 클릭 안 되게 위에 덮어 씌울 이미지-->
-                        <h3 class="youtubeH3">One Earth, One Chance</h3>
-                    </div>
-                </div>
-                <div class="goToNoticeSection">
-                    <div class="goToNoticeContainer">
-                        <ul>공지사항</ul>
-                        <ul>
-                            <li><a href="#!">개인정보 처리방침 변경 내용 안내</a></li>
-                            <li><a href="#!">서비스 개선 및 시스템 점검 안내</a></li>
-                            <li><a href="#!">처리방침 변경 내용</a></li>
-                            <li><a href="#!">처리방침 변경 내용</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!--캠페인 바로가기-->
-                <div class="goToBussinessSection">
-
-                    <div class="goBg1"></div>
-                    <i class="bi bi-arrow-right-circle-fill"></i>
-                    <div class="goToBusiness01Container">
-                        <ul>
-                            <h3>Atmospheric</h3>
-                            <h3>business</h3>
-                            <h3>대기 사업</h3>
-                        </ul>
-                    </div>
-
-                    <div class="goBg2"></div>
-                    <i class="bi bi-arrow-left-circle-fill"></i>
-                    <div class="goToBusiness02Container">
-                        <ul>
-                            <h3>Ocean</h3>
-                            <h3>business</h3>
-                            <h3>해양 사업</h3>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="goToCampaign">
-                    <div class="goToCampaignContainer">
-                        <div class="floating"></div>
-                        <h3>Campaign</h3>
-                        <div class="inner">
-                            <p>코딩온X포스코의 행보에 동참하세요!</p>
-                            <p>Participate campaigns together</p>
-                            <p>with CodingOn X POSCO</p>
-                            <button class="goToCamPaign">참여하기</button>
-                            <button class="goToCamPaign">Participate</button>
-
-                        </div>
-                    </div>
-                    
-                </div>
 
 
             </section>
-
-
-
             <footer>
                 <div class="info">
                     <ul class="inner">
