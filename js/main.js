@@ -1,4 +1,4 @@
-//사업 소개 바로가기
+사업 소개 바로가기
 $(document).ready(function () {
 	$('.goToBusiness01Container').mouseover(function () {
 		$('.goBg1').css({ opacity: 1 });
@@ -19,16 +19,16 @@ $(document).ready(function () {
 	});
 
 	$('.goToBusiness01Container').click(function () {
-		window.location.href = '/html/business/business01.html';
+		window.location.href = 'htmlbusinessbusiness01.html';
 	});
 
 	$('.goToBusiness02Container').click(function () {
-		window.location.href = '/html/business/business02.html';
+		window.location.href = 'htmlbusinessbusiness02.html';
 	});
 });
 
 $(document).ready(function () {
 	$('.goToCamPaign').click(function () {
-		window.location.href = '/html/campaign/campaign01.html'; // Replace with your desired page URL
+		window.location.href = 'htmlcampaigncampaign01.html';  Replace with your desired page URL
 	});
 });
