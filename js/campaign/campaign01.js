@@ -19,8 +19,8 @@ $(document).ready(function () {
 
 $(function () {
 	const swiper1 = new Swiper('.mySwiper1', {
-		// slidesPerView: 3,
-		// spaceBetween: 50,
+		slidesPerView: 3,
+		spaceBetween: 50,
 		freeMode: true,
 		autoplay: {
 			delay: 2000,
