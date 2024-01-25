@@ -1,0 +1,406 @@
+body,
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+p {
+    word-break: break-all;
+}
+
+/* 가장 먼저 위에 보이는 사진 */
+/*(공통)*/
+.intro-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 120px;
+    width: 100%;
+    height: 400px;
+    background-image: url(/img/activities-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+/*(공통)*/
+.intro-section p {
+    position: absolute;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(250, 251, 253);
+    width: 100%;
+    word-break: keep-all;
+}
+
+/* 서브 메뉴 네비바*/
+/*(공통)*/
+.subMenus-section {
+    position: relative;
+    top: 120px;
+    width: 100%;
+    z-index: 3;
+}
+.subMenus-section ul {
+    border-bottom: 2px solid rgb(237, 237, 238);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+
+.subMenus-section ul li {
+    display: flex;
+}
+
+.subMenus-section ul li a {
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: rgb(57, 57, 58);
+}
+
+.subMenus-section ul li a:hover {
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: rgb(15, 15, 95);
+}
+
+/* 캠페인 리뷰 */
+.review-section {
+    position: relative;
+    width: 100%;
+    height: 740px;
+    border: 1px solid transparent;
+    /* background-color: rgb(19, 165, 190); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-section .r-s-intro {
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 10px; */
+    /* margin: 0 auto; */
+    /* width: 100%; */
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.review-section .airline {
+    /* position: absolute; */
+    background-image: url(/img/airline-185.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    /* bottom: 30px; */
+    /* border: 1px solid transparent; */
+    border-radius: 50%;
+}
+
+.review-section .r-s-intro p {
+    word-break: keep-all;
+    width: 350px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 50px;
+    color: rgb(34, 35, 35);
+    font-weight: bold;
+    font-family: "Nanum Pen Script", cursive;
+    text-shadow: 1.4px 1.4px 1.6px white;
+    margin: 40px;
+}
+
+.review-section h3 {
+    position: absolute;
+    top: 520px;
+}
+
+.swiper1 {
+    position: relative;
+    top: 320px;
+    width: 600px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.swiper1 .swiper-slide {
+    line-height: 18px;
+    word-break: keep-all;
+    font-size: 14px;
+    background: #fff;
+}
+
+.swiper1 .swiper-slide img {
+    display: block;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.swiper1 .swiper-slide p {
+    display: block;
+    padding: 0 6px 6px 6px;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.swiper1 .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+}
+
+/*현재 진행 중인 캠페인*/
+.showCampagin-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    height: 600px;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.showCampagin-section .showContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* width: 100%; */
+}
+
+.showCampagin-section .showContainer p {
+    position: absolute;
+    top: 80px;
+    width: 90vw;
+    word-break: keep-all;
+    line-height: 50px;
+    font-size: 38px;
+    font-family: "Black Han Sans", sans-serif;
+    color: rgb(34, 35, 35);
+    text-align: center;
+}
+.showCampagin-section .showContainer .swiper2 {
+    position: absolute;
+    /* right: 10px; */
+    top: 200px;
+    width: 263px;
+    height: 300px;
+    /* margin: 0 auto; */
+}
+
+.showCampagin-section .showContainer .swiper2 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.showCampagin-section .showContainer .swiper2 .swiper-slide img {
+    border-radius: 20%;
+    display: block;
+    width: 100%;
+}
+
+.showCampagin-section .showContainer .swiper2 .swiper-pagination {
+    position: absolute;
+    bottom: -30px;
+}
+
+/*참여 유도*/
+.join-us-section {
+    position: relative;
+    height: 200px;
+    margin-top: 100px;
+    padding: 100px 0px;
+    height: 200px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(-45deg, rgb(114, 114, 117), rgb(0, 0, 0));
+}
+
+.join-us-section ul {
+    position: absolute;
+    word-break: keep-all;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 6%;
+    width: 40%;
+    height: 90%;
+}
+
+.join-us-section ul .joinTitle {
+    line-height: 53px;
+}
+
+.join-us-section .environ-2-img {
+    background-image: url(/img/join-us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    filter: brightness(50%);
+}
+
+.join-us-section input {
+    width: 50%;
+    text-indent: 5px;
+    font-size: 14px;
+    border-radius: 7px;
+    line-height: 25px;
+    outline: 0;
+    background-color: #e9e9e9;
+}
+
+.join-us-section input:focus {
+    background-color: #fff;
+}
+
+.join-us-section button {
+    margin-right: 10px;
+    background-color: #212121;
+    color: white;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid rgb(83, 83, 83);
+    width: 90px;
+    height: 30px;
+}
+
+.join-us-section button:hover {
+    background-color: rgb(64, 64, 64);
+}
+
+@media (max-width: 768px) {
+    .review-section .r-s-intro p {
+        font-size: 40px;
+        width: 200px;
+    }
+    .swiper1 {
+        width: 450px;
+    }
+}
+
+@media (max-width: 476px) {
+    /*(공통)서브 메뉴 글자*/
+    .subMenus-section ul li a {
+        font-size: 16px;
+    }
+    .subMenus-section ul li a:hover {
+        font-size: 16px;
+    }
+    /*(공통)인트로 배경 글자*/
+    .intro-section p {
+        font-size: 30px;
+    }
+
+    .review-section {
+        height: 790px;
+    }
+
+    .review-section .airline {
+        width: 150px;
+        height: 150px;
+    }
+    .review-section .r-s-intro {
+        flex-direction: column-reverse;
+        top: 120px;
+    }
+
+    .review-section .r-s-intro p {
+        font-size: 26px;
+        width: 130px;
+    }
+
+    .review-section h3 {
+        top: 600px;
+    }
+
+    .swiper1 {
+        top: 360px;
+        width: 200px;
+    }
+    .swiper1 .swiper-slide {
+        font-size: 12px;
+    }
+    .swiper1 .swiper-slide img {
+        margin: 0 auto;
+    }
+    .swiper1 .swiper-slide p {
+        padding: 0 6px 6px 6px;
+        text-align: center;
+    }
+
+    .showCampagin-section {
+        width: 100%;
+    }
+
+    .showCampagin-section .showContainer p {
+        width: 100vw;
+        font-size: 30px;
+    }
+    .showCampagin-section {
+        top: 25px;
+    }
+    .showCampagin-section .showContainer .swiper2 {
+        top: 220px;
+        left: -125px;
+        width: 233px;
+        height: 280px;
+    }
+    .join-us-section {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 50px;
+        height: 180px;
+        font-size: 20px;
+        padding: 70px 0;
+        margin-bottom: 100px;
+    }
+    .join-us-section ul {
+        width: 43%;
+    }
+
+    .join-us-section ul .joinTitle {
+        line-height: 33px;
+    }
+
+    .join-us-section input {
+        width: 80%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .join-us-section button {
+        font-size: 12px;
+        width: 70px;
+        height: 30px;
+    }
+}
