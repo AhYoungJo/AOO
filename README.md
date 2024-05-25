@@ -28,7 +28,7 @@
 ### Team
 |<img src="https://avatars.githubusercontent.com/u/125351416?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/55341535?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/154851932?v=4" width="150" height="150"/>|
 |:-:|:-:|:-:|
-|조아영<br/>[@AhYoung_Jo](https://github.com/AhYoungJo)|TaeGeunLee<br/>[@boooruim](https://github.com/boooruim)|kss2408<br/>[@kss2408](https://github.com/kss2408)|
+|조아영<br/>[@AhYoung_Jo](https://github.com/AhYoungJo)|이태근<br/>[@boooruim](https://github.com/boooruim)|김성수<br/>[@kss2408](https://github.com/kss2408)|
 
 
 <br/>
