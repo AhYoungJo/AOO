@@ -4,7 +4,7 @@
 
 환경 오염에 대한 경각심을 알리고 캠페인을 진행하는 환경 보호 기관용 사이트
 
-### [🔗배포 링크](https://aoo-team3-project1.netlify.app/html/business/business02.html)
+### [🔗배포 링크](https://aoo-team3-project1.netlify.app/)
 ### [🔗회고록](https://velog.io/@double29/%EC%B2%AB-%ED%98%91%EC%97%85-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EC%99%80-%EC%95%9E%EC%9C%BC%EB%A1%9C%EC%9D%98-%EB%B0%A9%ED%96%A5)
 
 
